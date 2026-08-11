@@ -7,7 +7,7 @@ version: 17.11.43
 queued_at: 2026-08-11T10:51:08Z
 repo_url: https://github.com/sunpole/uChurch-public
 web_url: https://sunpole.github.io/uChurch-public/
-image: 2026-08-11-uchurch-public-portal.png
+image: 2026-08-11-uchurch-v17-11-43-test-database.png
 ---
 
 uChurch v17.11.43
@@ -17,7 +17,3 @@ uChurch v17.11.43
 не содержит данных церкви и может быть сброшена только после явного
 подтверждения с предварительной резервной копией. Пользовательские базы и
 исходный код CRM по-прежнему не публикуются.
-
-Ссылка: https://sunpole.github.io/uChurch-public/
-
-#uChurch #тыЦерковь #uNews #Sunpole
