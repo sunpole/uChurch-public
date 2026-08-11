@@ -1,9 +1,27 @@
 # Complete Public Patch Index
 
-This index lists every documented version known in the local project history
-when the public storefront was created. The earliest confirmed version is
-`v17.6.1`. Numbering gaps are not filled with invented events. The index does
-not include source code, working databases, keys, data paths or personal data.
+This index lists every documented stage known in the local project history
+when the public storefront was created. The earliest confirmed work stream is
+the `v0.1-v11.0` roadmap, followed by `v15.0` documents, a working `v15.1`
+prerelease and archived `v16.7-v16.14` builds. Numbering gaps are not filled
+with invented events. The index does not include source code, working
+databases, keys, data paths or personal data.
+
+## v0.1-v11.0: early foundation
+
+The preserved roadmap records an early phase from 25 to 28 May 2026: tabular
+data import, search and filters, bilingual dictionaries, basic contacts and
+the person Card. Its individual internal-step numbering was not preserved, so
+this index does not manufacture patch notes for it.
+
+## v15.0-v16.14: move toward a modular CRM
+
+| Version or range | Public description |
+| --- | --- |
+| v15.0 | Recorded a local CRM with a working Table and editable person Card. |
+| v15.1 | Working prerelease with multiselects, data-source switching and RU/EN UI; preparation for modular architecture began. |
+| v15.2, v15.5, v15.9 | Technical requirements and plans remain for these stages; they describe evolving requirements, not separate published builds. |
+| v16.7-v16.14 | Stable-build archives are confirmed. Publicly this records the move toward modular architecture and server-backed storage without disclosing source or data. |
 
 ## v17.6-v17.8: early stabilization
 
