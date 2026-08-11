@@ -7,7 +7,7 @@ version: 17.11.45
 queued_at: 2026-08-11T15:30:00Z
 repo_url: https://github.com/sunpole/uChurch-public
 web_url: https://sunpole.github.io/uChurch-public/
-image: 2026-08-11-uchurch-v17-11-45-new-database.png
+image: 2026-08-11-uchurch-v17-11-45-new-database.jpg
 ---
 
 uChurch v17.11.45
