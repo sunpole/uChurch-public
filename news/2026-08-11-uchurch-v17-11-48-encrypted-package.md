@@ -13,7 +13,3 @@ web_url: https://github.com/sunpole/uChurch-public/blob/main/docs/release-v17.11
 переносимого зашифрованного пакета с парольной фразой, отдельным файлом
 восстановления и контролем целостности. Веб-загрузка, Google Drive и работа с
 реальными базами церквей ещё не открыты.
-
-Ссылка: https://github.com/sunpole/uChurch-public/blob/main/docs/release-v17.11.48.md
-
-#uChurch #uNews #тыНовости #Sunpole
