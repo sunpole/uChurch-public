@@ -143,6 +143,7 @@ this index does not manufacture patch notes for it.
 | v17.11.45 | Added visual creation of a separate empty external database with local operator profiles. |
 | v17.11.46 | Added a visible save state, bounded autosave for safe changes, retry guidance, and atomic local JSON replacement. Dangerous actions remain manual. |
 | v17.11.47 | Prepared a synthetic-only staging contract. The public address is not open yet, and no church data is involved. |
+| v17.11.48 | Validated the foundation for a portable encrypted package with integrity checks on synthetic data. Web upload and work with real databases are not open yet. |
 
 ## Next
 
