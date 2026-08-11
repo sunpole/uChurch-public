@@ -1,0 +1,27 @@
+# Public portal only: refuse common private and generated artifacts.
+.env
+.env.*
+!.env.example
+*.log
+*.tmp
+*.bak
+*.db
+*.sqlite
+*.sqlite3
+*.jsonl
+*.age
+*.gpg
+*.enc
+*.pem
+*.key
+*.p12
+*.pfx
+node_modules/
+dist/
+build/
+coverage/
+backups/
+exports/
+screenshots/private/
+Thumbs.db
+.DS_Store
