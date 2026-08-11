@@ -1,40 +1,22 @@
 # uChurch
 
-Public product portal for uChurch, a church CRM in active development.
+Public product portal, release catalog and future safe Demo for a church CRM.
 
-uChurch is being prepared as a web application that helps a church work with
-people, ministries and care information while retaining control over its own
-data. This repository intentionally contains no CRM source code, no User DB,
-no backups and no private operational material.
+**Website:** https://sunpole.github.io/uChurch-public/
 
-## Current Status
+## What is public
 
-The team is preparing the web product foundation. A public Demo will use only
-synthetic records. Accepting a real church database on a server is not planned
-until the privacy, encryption, temporary-session and security gates are
-independently verified.
+- A clear RU/EN product story and verified development catalog.
+- Release notes, public roadmap and safe future Demo materials.
+- One Russian-language development update per completed patch through [uNews](https://t.me/uNewsLog).
 
-## Public Materials
+## What is deliberately not public
 
-- [История разработки (RU)](docs/development-history.ru.md)
-- [Development history (EN)](docs/development-history.en.md)
-- [Полный индекс patch-истории (RU)](docs/patch-history.ru.md)
-- [Complete patch index (EN)](docs/patch-history.en.md)
-- [План развития (RU)](docs/roadmap.ru.md)
-- [Product roadmap (EN)](docs/roadmap.en.md)
-- [Новости разработки](news/)
+The portal contains no CRM core, User DB, runtime JSON, exports, backups,
+audit logs, screenshots of real CRM records, credentials or recovery keys.
 
-Telegram development updates are published through [uNews](https://t.me/uNewsLog).
-Posts are written in Russian.
+- [Development catalog](docs/patch-history.ru.md) / [English catalog](docs/patch-history.en.md)
+- [Roadmap](docs/roadmap.ru.md) / [English roadmap](docs/roadmap.en.md)
+- [Public news rules](news/README.md)
 
-## Privacy
-
-Do not send church records, exports, credentials, encryption keys or support
-archives to this repository. Public demos and illustrations use synthetic data
-only.
-
-## Licence
-
-Copyright (c) 2026 Anton Mahomedov. All rights reserved. No permission is
-granted to copy, reuse, modify, redistribute, train AI systems on, or build a
-derivative product from any published material without prior written consent.
+Copyright (c) 2026 Anton Mahomedov. All rights reserved. See [LICENSE.md](LICENSE.md).
