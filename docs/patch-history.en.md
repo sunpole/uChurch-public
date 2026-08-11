@@ -128,12 +128,13 @@ this index does not manufacture patch notes for it.
 | v17.11.40 | Added read-only coverage checks for synthetic Demo scenarios. |
 | v17.11.41 | Added an unconnected-shell Start Center without hidden folder access. |
 
-## v17.11.42-v17.11.43: public boundary and private Test QA
+## v17.11.42-v17.11.44: public boundary and private Demo QA
 
 | Version | Public description |
 | --- | --- |
 | v17.11.42 | Separated the private developer core from a code-free public storefront with safe development history. |
 | v17.11.43 | Added one persistent synthetic Test database for internal engineering QA. It starts from the immutable Demo template and requires explicit confirmation plus a backup before reset. |
+| v17.11.44 | Repaired synthetic Demo data validation and the localized Trash confirmation after a browser QA pass. No church data was involved. |
 
 ## Next
 
