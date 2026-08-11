@@ -57,4 +57,6 @@ window.UCHURCH_CATALOG = [
   { stage: 'product', version: 'v17.11.28-v17.11.35', ru: 'Появились пустая оболочка, изолированные рабочие пространства, синтетическая Demo и Корзина.', en: 'Added unconnected shell, isolated workspaces, synthetic Demo and People Trash.' },
   { stage: 'product', version: 'v17.11.36-v17.11.41', ru: 'Улучшены локальная сеть, мобильная работа, QA Demo и Стартовый центр.', en: 'Improved local networking, mobile work, Demo QA and Start Center.' },
   { stage: 'product', version: 'v17.11.42', ru: 'Приватное ядро отделено от публичной витрины с безопасной историей разработки.', en: 'Separated private core from the public storefront with safe development history.' }
+,
+  { stage: 'product', version: 'v17.11.43', ru: 'Добавлена постоянная синтетическая Тестовая база для внутренней инженерной проверки. Она создаётся из неизменяемого Demo-шаблона и сбрасывается только с явным подтверждением и резервной копией.', en: 'Added a persistent synthetic Test database for private engineering QA. It starts from an immutable Demo template and can be reset only with explicit confirmation and a backup.' }
 ];
