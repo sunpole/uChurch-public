@@ -136,6 +136,13 @@ this index does not manufacture patch notes for it.
 | v17.11.43 | Added one persistent synthetic Test database for internal engineering QA. It starts from the immutable Demo template and requires explicit confirmation plus a backup before reset. |
 | v17.11.44 | Repaired synthetic Demo data validation and the localized Trash confirmation after a browser QA pass. No church data was involved. |
 
+## v17.11.45-v17.11.46: safer local data work
+
+| Version | Public description |
+| --- | --- |
+| v17.11.45 | Added visual creation of a separate empty external database with local operator profiles. |
+| v17.11.46 | Added a visible save state, bounded autosave for safe changes, retry guidance, and atomic local JSON replacement. Dangerous actions remain manual. |
+
 ## Next
 
 After this history is available in the public storefront, new development news
