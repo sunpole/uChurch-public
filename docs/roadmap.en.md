@@ -16,10 +16,14 @@
 ## Before the Private Web Beta
 
 1. Create an encrypted portable database package with integrity checks.
-2. Create a temporary isolated session without persistent server storage.
+2. Verified with synthetic Demo: a temporary isolated session without persistent server storage.
 3. Add explicit save, download and end-session actions.
 4. Add invitation access, HTTPS, request limits, deletion monitoring, load
    testing and independent security review.
 
 Permanent cloud storage, accounts, collaboration and payments are not part of
 the first web beta.
+
+The immediate next stage is measured deployment of the synthetic runtime at
+`staging.uchurch.ru`. Real databases remain prohibited until a separate
+security gate.

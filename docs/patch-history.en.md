@@ -144,6 +144,7 @@ this index does not manufacture patch notes for it.
 | v17.11.46 | Added a visible save state, bounded autosave for safe changes, retry guidance, and atomic local JSON replacement. Dangerous actions remain manual. |
 | v17.11.47 | Prepared a synthetic-only staging contract. The public address is not open yet, and no church data is involved. |
 | v17.11.48 | Validated the foundation for a portable encrypted package with integrity checks on synthetic data. Web upload and work with real databases are not open yet. |
+| v17.11.49 | Synthetic Demo gained isolated temporary web sessions. Browser workspaces are separated and the server enforces 10/15/30-minute limits. Real databases are not accepted. |
 
 ## Next
 
