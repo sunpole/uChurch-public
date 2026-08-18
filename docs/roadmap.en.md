@@ -3,7 +3,8 @@
 ## Now
 
 1. Separate the private developer core and the public storefront.
-2. Keep only synthetic data in the internal test environment.
+2. Synthetic staging supports an explicit Test or blank temporary session;
+   the server does not accept real church databases.
 3. Publish Russian development updates through uNews from the public storefront.
 
 ## Before the Web Demo
@@ -24,6 +25,6 @@
 Permanent cloud storage, accounts, collaboration and payments are not part of
 the first web beta.
 
-The immediate next stage is measured deployment of the synthetic runtime at
-`staging.uchurch.ru`. Real databases remain prohibited until a separate
-security gate.
+The immediate next stage adds explicit save, download, and end-session actions
+for synthetic temporary sessions. Real databases remain prohibited until a
+separate security gate.

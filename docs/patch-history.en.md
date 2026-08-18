@@ -150,10 +150,12 @@ this index does not manufacture patch notes for it.
 | v17.11.53 | Staging health now reports the exact immutable deployed tag. |
 | v17.11.54 | The database-actions menu stays within a narrow viewport. |
 | v17.11.55 | Compact screens use separate clear rows for database information and view navigation. |
+| v17.11.57-v17.11.61 | Synthetic staging gained an explicit Start Center: a Test database or a blank temporary database with specified operators. The server does not accept real databases. |
 
 ## Next
 
 After this history is available in the public storefront, new development news
 will come only from this repository, in Russian, and only for actually
-completed stages. The product direction is a web application with a synthetic
-Demo followed by protected temporary work with an encrypted user database.
+completed stages. The next product step is save/download for the synthetic
+temporary session, followed by protected temporary work with an encrypted user
+database.
