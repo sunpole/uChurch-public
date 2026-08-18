@@ -151,6 +151,7 @@ this index does not manufacture patch notes for it.
 | v17.11.54 | The database-actions menu stays within a narrow viewport. |
 | v17.11.55 | Compact screens use separate clear rows for database information and view navigation. |
 | v17.11.57-v17.11.61 | Synthetic staging gained an explicit Start Center: a Test database or a blank temporary database with specified operators. The server does not accept real databases. |
+| v17.11.62-v17.11.66 | Synthetic sessions can download an encrypted copy and recovery file, end explicitly, and complete a tested bounded Demo-package opening flow. Public staging keeps package opening disabled and does not accept real church databases. |
 
 ## Next
 
