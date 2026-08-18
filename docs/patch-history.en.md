@@ -145,6 +145,11 @@ this index does not manufacture patch notes for it.
 | v17.11.47 | Prepared a synthetic-only staging contract. The public address is not open yet, and no church data is involved. |
 | v17.11.48 | Validated the foundation for a portable encrypted package with integrity checks on synthetic data. Web upload and work with real databases are not open yet. |
 | v17.11.49 | Synthetic Demo gained isolated temporary web sessions. Browser workspaces are separated and the server enforces 10/15/30-minute limits. Real databases are not accepted. |
+| v17.11.51 | A separate synthetic staging environment passed acceptance: HTTPS, health checks, session isolation, and temporary-workspace cleanup were confirmed without real database uploads. |
+| v17.11.52 | Database and Table controls were consolidated into compact menus; the project name remains plain text. |
+| v17.11.53 | Staging health now reports the exact immutable deployed tag. |
+| v17.11.54 | The database-actions menu stays within a narrow viewport. |
+| v17.11.55 | Compact screens use separate clear rows for database information and view navigation. |
 
 ## Next
 
