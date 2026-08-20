@@ -153,11 +153,11 @@ this index does not manufacture patch notes for it.
 | v17.11.57-v17.11.61 | Synthetic staging gained an explicit Start Center: a Test database or a blank temporary database with specified operators. The server does not accept real databases. |
 | v17.11.62-v17.11.66 | Synthetic sessions can download an encrypted copy and recovery file, end explicitly, and complete a tested bounded Demo-package opening flow. Public staging keeps package opening disabled and does not accept real church databases. |
 | v17.11.67 | Expiring, limited-use invitations are prepared for a future closed pilot. The mechanism is disabled on staging and creates no accounts. |
+| v17.11.69 | Phone navigation was restored with a persistent primary bottom bar and one right-side panel for project actions. Staging remains synthetic-only. |
 
 ## Next
 
 After this history is available in the public storefront, new development news
 will come only from this repository, in Russian, and only for actually
-completed stages. The next product step is save/download for the synthetic
-temporary session, followed by protected temporary work with an encrypted user
-database.
+completed stages. The next product step is an independent security review and
+synthetic private-pilot rehearsal before any real church database is considered.

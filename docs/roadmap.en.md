@@ -7,24 +7,19 @@
    the server does not accept real church databases.
 3. Publish Russian development updates through uNews from the public storefront.
 
-## Before the Web Demo
-
-1. Approve the privacy and threat model.
-2. Prepare a web welcome flow and capability catalogue.
-3. Verify calculations and core user flows using synthetic data.
-4. Open a web Demo without church-database upload.
-
 ## Before the Private Web Beta
 
-1. Create an encrypted portable database package with integrity checks.
-2. Verified with synthetic Demo: a temporary isolated session without persistent server storage.
-3. Add explicit save, download and end-session actions.
-4. Add invitation access, HTTPS, request limits, deletion monitoring, load
-   testing and independent security review.
+1. Complete an independent security review and a private-pilot rehearsal using
+   synthetic data only.
+2. Configure a separate private pilot host without replacing synthetic staging.
+3. Only after acceptance, conduct controlled compatibility work on a copy of
+   the existing church database. The original remains untouched.
+4. Until these steps are complete, a real church database cannot be opened over
+   the internet.
 
 Permanent cloud storage, accounts, collaboration and payments are not part of
 the first web beta.
 
-The immediate next stage adds explicit save, download, and end-session actions
-for synthetic temporary sessions. Real databases remain prohibited until a
-separate security gate.
+The immediate next stage is an independent security review and synthetic
+private-pilot rehearsal. Real databases remain prohibited until a separate
+security gate.
