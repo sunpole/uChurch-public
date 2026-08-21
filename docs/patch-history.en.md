@@ -159,6 +159,7 @@ this index does not manufacture patch notes for it.
 | v17.11.76 | Prepared a controlled copy-only compatibility check: a separate copy is checked for structure and links while the original database remains untouched. |
 | v17.11.77 | Strengthened synthetic-environment startup verification before deployment. Database rules did not change. |
 | v17.11.78 | Aligned active version markers and protected-pilot instructions. Staging remains synthetic Demo only. |
+| v17.11.79 | Rechecked protected-pilot boundaries on synthetic fixtures. Real databases remain unavailable. |
 
 ## Next
 
