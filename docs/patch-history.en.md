@@ -163,10 +163,11 @@ this index does not manufacture patch notes for it.
 | v17.11.80 | Added a copy-only packager and explicit closed-pilot mode, both disabled by default. No church data was used. |
 | v17.11.81 | Synthetic Demo gained a clear first entry and a dedicated Demo operator. No real databases were used. |
 | v17.11.82 | The author-designed `uchurch.ru` page moved into the public storefront. It now offers clear routes to synthetic Demo and the closed pre-alpha environment. The page does not store or process CRM data. |
+| v17.11.83 | The separate pre-alpha environment gained a neutral invitation entry. A code is never displayed or stored in the browser, and encrypted user packages remain unavailable. |
 
 ## Next
 
 After this history is available in the public storefront, new development news
 will come only from this repository, in Russian, and only for actually
-completed stages. The next product step is a verifiable pre-alpha gate and a
+completed stages. The next product step is independent security review and a
 synthetic private-pilot rehearsal before any real church database is considered.

@@ -22,6 +22,6 @@
 Permanent cloud storage, accounts, collaboration and payments are not part of
 the first web beta.
 
-The immediate next stage is a verifiable pre-alpha gate, followed by an
+The verifiable pre-alpha gate is complete. The immediate next stage is an
 independent security review and synthetic private-pilot rehearsal. Real
-databases remain prohibited until a separate security gate.
+databases remain prohibited until a separate accepted security gate.
