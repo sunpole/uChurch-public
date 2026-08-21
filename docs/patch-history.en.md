@@ -162,10 +162,11 @@ this index does not manufacture patch notes for it.
 | v17.11.79 | Rechecked protected-pilot boundaries on synthetic fixtures. Real databases remain unavailable. |
 | v17.11.80 | Added a copy-only packager and explicit closed-pilot mode, both disabled by default. No church data was used. |
 | v17.11.81 | Synthetic Demo gained a clear first entry and a dedicated Demo operator. No real databases were used. |
+| v17.11.82 | The author-designed `uchurch.ru` page moved into the public storefront. It now offers clear routes to synthetic Demo and the closed pre-alpha environment. The page does not store or process CRM data. |
 
 ## Next
 
 After this history is available in the public storefront, new development news
 will come only from this repository, in Russian, and only for actually
-completed stages. The next product step is an independent security review and
+completed stages. The next product step is a verifiable pre-alpha gate and a
 synthetic private-pilot rehearsal before any real church database is considered.

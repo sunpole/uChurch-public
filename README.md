@@ -4,6 +4,8 @@ Public product portal, release catalog and future safe Demo for a church CRM.
 
 **Website:** https://sunpole.github.io/uChurch-public/
 
+**Public entry:** https://uchurch.ru/ ([landing source](landing/uchurch.ru/index.html))
+
 ## What is public
 
 - A clear RU/EN product story and verified development catalog.

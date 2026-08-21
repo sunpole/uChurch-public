@@ -6,6 +6,8 @@
 2. Synthetic staging supports an explicit Test or blank temporary session;
    the server does not accept real church databases.
 3. Publish Russian development updates through uNews from the public storefront.
+4. `uchurch.ru` is the public entry: Demo points only to synthetic staging and
+   pre-alpha points to a separate protected environment.
 
 ## Before the Private Web Beta
 
@@ -20,6 +22,6 @@
 Permanent cloud storage, accounts, collaboration and payments are not part of
 the first web beta.
 
-The immediate next stage is an independent security review and synthetic
-private-pilot rehearsal. Real databases remain prohibited until a separate
-security gate.
+The immediate next stage is a verifiable pre-alpha gate, followed by an
+independent security review and synthetic private-pilot rehearsal. Real
+databases remain prohibited until a separate security gate.
