@@ -154,6 +154,7 @@ this index does not manufacture patch notes for it.
 | v17.11.62-v17.11.66 | Synthetic sessions can download an encrypted copy and recovery file, end explicitly, and complete a tested bounded Demo-package opening flow. Public staging keeps package opening disabled and does not accept real church databases. |
 | v17.11.67 | Expiring, limited-use invitations are prepared for a future closed pilot. The mechanism is disabled on staging and creates no accounts. |
 | v17.11.69 | Phone navigation was restored with a persistent primary bottom bar and one right-side panel for project actions. Staging remains synthetic-only. |
+| v17.11.70 | Technical boundaries for temporary web sessions and internal checks before a future closed pilot were strengthened. Staging remains synthetic-only, and an independent security review is still required. |
 
 ## Next
 
