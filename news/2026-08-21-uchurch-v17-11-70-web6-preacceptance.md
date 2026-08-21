@@ -7,6 +7,7 @@ version: 17.11.70
 queued_at: 2026-08-21T09:30:00Z
 repo_url: https://github.com/sunpole/uChurch-public
 web_url: https://github.com/sunpole/uChurch-public/blob/main/docs/release-v17.11.70.md
+image: 2026-08-21-uchurch-v17-11-70-web6-preacceptance.jpg
 ---
 
 Обновление uChurch v17.11.70: укреплены технические границы временной веб

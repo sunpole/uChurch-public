@@ -7,6 +7,7 @@ version: 17.11.66
 queued_at: 2026-08-18T08:00:00Z
 repo_url: https://github.com/sunpole/uChurch-public
 web_url: https://github.com/sunpole/uChurch-public/blob/main/docs/release-v17.11.66.md
+image: 2026-08-18-uchurch-v17-11-66-demo-package-opening.jpg
 ---
 
 Обновление uChurch v17.11.66: завершена проверка открытия зашифрованного
