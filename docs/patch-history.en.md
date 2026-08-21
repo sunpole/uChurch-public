@@ -160,6 +160,7 @@ this index does not manufacture patch notes for it.
 | v17.11.77 | Strengthened synthetic-environment startup verification before deployment. Database rules did not change. |
 | v17.11.78 | Aligned active version markers and protected-pilot instructions. Staging remains synthetic Demo only. |
 | v17.11.79 | Rechecked protected-pilot boundaries on synthetic fixtures. Real databases remain unavailable. |
+| v17.11.80 | Added a copy-only packager and explicit closed-pilot mode, both disabled by default. No church data was used. |
 
 ## Next
 
