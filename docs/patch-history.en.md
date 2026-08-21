@@ -155,6 +155,8 @@ this index does not manufacture patch notes for it.
 | v17.11.67 | Expiring, limited-use invitations are prepared for a future closed pilot. The mechanism is disabled on staging and creates no accounts. |
 | v17.11.69 | Phone navigation was restored with a persistent primary bottom bar and one right-side panel for project actions. Staging remains synthetic-only. |
 | v17.11.70 | Technical boundaries for temporary web sessions and internal checks before a future closed pilot were strengthened. Staging remains synthetic-only, and an independent security review is still required. |
+| v17.11.71-v17.11.75 | A separate synthetic closed-pilot environment and HTTPS verification were prepared. Real databases are still not accepted. |
+| v17.11.76 | Prepared a controlled copy-only compatibility check: a separate copy is checked for structure and links while the original database remains untouched. |
 
 ## Next
 
