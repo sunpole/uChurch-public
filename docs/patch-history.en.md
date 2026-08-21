@@ -161,6 +161,7 @@ this index does not manufacture patch notes for it.
 | v17.11.78 | Aligned active version markers and protected-pilot instructions. Staging remains synthetic Demo only. |
 | v17.11.79 | Rechecked protected-pilot boundaries on synthetic fixtures. Real databases remain unavailable. |
 | v17.11.80 | Added a copy-only packager and explicit closed-pilot mode, both disabled by default. No church data was used. |
+| v17.11.81 | Synthetic Demo gained a clear first entry and a dedicated Demo operator. No real databases were used. |
 
 ## Next
 
