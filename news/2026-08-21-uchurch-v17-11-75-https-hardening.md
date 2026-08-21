@@ -7,6 +7,7 @@ version: 17.11.75
 queued_at: 2026-08-21T15:30:00Z
 repo_url: https://github.com/sunpole/uChurch-public
 web_url: https://github.com/sunpole/uChurch-public/blob/main/docs/release-v17.11.75.md
+image: 2026-08-21-uchurch-v17-11-73-pilot-boundary.png
 ---
 
 Обновление uChurch v17.11.75: усилена защита HTTPS для отдельной
