@@ -167,10 +167,13 @@ this index does not manufacture patch notes for it.
 | v17.11.84 | Corrected the pilot response to rapid-request limits so an expected limit does not look like a service outage. |
 | v17.11.85-v17.11.86 | Established the practical MVP path: Demo remains fully synthetic, while the separate pilot can create a blank database or open an encrypted package and a verified copy of five JSON files. The server does not become permanent storage. |
 | v17.11.87 | The public Demo action opens one dedicated synthetic session directly. Repeated clicks cannot create parallel sessions. |
+| v17.11.88-v17.11.90 | Simplified the working entry to two actions: create a new database or open one from the computer. Forms appear only after a choice, and the CRM stays hidden until a session opens successfully. |
+| v17.11.91 | Split new-database setup into clear steps: church name, first operator, then the working interface. A stored operator is selected after an opened package passes validation. |
+| v17.11.92 | Stabilized Pilot loading so records and the Table cannot appear before the current step is known. Removed false limits during rapid refreshes and verified database creation plus operator selection on desktop and phone widths. |
 
 ## Next
 
 After this history is available in the public storefront, new development news
 will come only from this repository, in Russian, and only for actually
-completed stages. The next product step is a full owner-copy cycle: open,
+completed stages. The next product step is a verified owner-copy cycle: open,
 edit, save, download and reopen without touching the original database.

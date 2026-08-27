@@ -3,25 +3,24 @@
 ## Now
 
 1. Separate the private developer core and the public storefront.
-2. Synthetic staging supports an explicit Test or blank temporary session;
-   the server does not accept real church databases.
+2. Synthetic staging remains the permanent Demo, while a separate Pilot guides
+   the user through creating a database or opening a protected owner copy.
 3. Publish Russian development updates through uNews from the public storefront.
 4. `uchurch.ru` is the public entry: Demo points only to synthetic staging and
    pre-alpha points to a separate protected environment.
 
-## Before the Private Web Beta
+## Before the Working Closed Pilot
 
-1. Complete an independent security review and a private-pilot rehearsal using
-   synthetic data only.
-2. Configure a separate private pilot host without replacing synthetic staging.
-3. Only after acceptance, conduct controlled compatibility work on a copy of
-   the existing church database. The original remains untouched.
-4. Until these steps are complete, a real church database cannot be opened over
-   the internet.
+1. Verify the complete owner-copy cycle: open, edit, save, download and reopen.
+2. Compare source and result data while keeping the original database untouched.
+3. Give the owner concise instructions for storing the encrypted working copy
+   and ending each temporary session safely.
+4. After the first controlled pilot, complete SR1 with measured VPS monitoring,
+   evidence-based limits, alerts and load checks.
 
 Permanent cloud storage, accounts, collaboration and payments are not part of
 the first web beta.
 
-The verifiable pre-alpha gate is complete. The immediate next stage is an
-independent security review and synthetic private-pilot rehearsal. Real
-databases remain prohibited until a separate accepted security gate.
+The current Pilot interface now passes temporary-database creation and operator
+selection on desktop and phone widths. The immediate next stage is a controlled
+full-cycle check on a separate owner copy without changing the original.
