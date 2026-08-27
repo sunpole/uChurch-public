@@ -164,10 +164,13 @@ this index does not manufacture patch notes for it.
 | v17.11.81 | Synthetic Demo gained a clear first entry and a dedicated Demo operator. No real databases were used. |
 | v17.11.82 | The author-designed `uchurch.ru` page moved into the public storefront. It now offers clear routes to synthetic Demo and the closed pre-alpha environment. The page does not store or process CRM data. |
 | v17.11.83 | The separate pre-alpha environment gained a neutral invitation entry. A code is never displayed or stored in the browser, and encrypted user packages remain unavailable. |
+| v17.11.84 | Corrected the pilot response to rapid-request limits so an expected limit does not look like a service outage. |
+| v17.11.85-v17.11.86 | Established the practical MVP path: Demo remains fully synthetic, while the separate pilot can create a blank database or open an encrypted package and a verified copy of five JSON files. The server does not become permanent storage. |
+| v17.11.87 | The public Demo action opens one dedicated synthetic session directly. Repeated clicks cannot create parallel sessions. |
 
 ## Next
 
 After this history is available in the public storefront, new development news
 will come only from this repository, in Russian, and only for actually
-completed stages. The next product step is independent security review and a
-synthetic private-pilot rehearsal before any real church database is considered.
+completed stages. The next product step is a full owner-copy cycle: open,
+edit, save, download and reopen without touching the original database.
