@@ -173,6 +173,7 @@ this index does not manufacture patch notes for it.
 | v17.11.93 | Established encrypted `.uchurchdb` as the owner-held working format. Migration, edit, add, download and reopen were proved using a synthetic copy only. |
 | v17.11.94 | Added canonical metadata, robots rules and a one-URL sitemap for `uchurch.ru`; Pilot and staging now use server-side `noindex` without treating it as access control. |
 | v17.11.95 | Separated the mini-game hint and counter from the board, restored normal zoom, and added reduced-motion support without changing the author-designed composition. |
+| v17.11.96 | Each solved picture puzzle now leaves its photograph in a small persistent browser gallery with an accessible zoom viewer. |
 
 ## Next
 
