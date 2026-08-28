@@ -21,6 +21,6 @@
 Permanent cloud storage, accounts, collaboration and payments are not part of
 the first web beta.
 
-The current Pilot interface now passes temporary-database creation and operator
-selection on desktop and phone widths. The immediate next stage is a controlled
-full-cycle check on a separate owner copy without changing the original.
+The synthetic Pilot now completes the encrypted database cycle: copy migration,
+edit, add, download and reopen. The next step is the same controlled cycle on a
+separate owner database copy without changing the original.
