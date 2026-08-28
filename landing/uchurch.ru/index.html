@@ -473,6 +473,46 @@
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: clamp(6px, .8vw, 12px);
+      max-height: 220px;
+      opacity: 1;
+      transform: translateY(0);
+      transition: max-height .3s ease, opacity .28s ease, transform .3s ease;
+    }
+
+    .gallery-toggle {
+      display: block;
+      min-height: 28px;
+      margin: 0 0 7px auto;
+      padding: 5px 8px;
+      border: 0;
+      border-bottom: 1px solid rgba(134,171,177,.22);
+      border-radius: 0;
+      background: transparent;
+      color: var(--muted);
+      font-size: 8px;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: color .18s ease, border-color .18s ease;
+    }
+
+    .gallery-toggle:hover,
+    .gallery-toggle:focus-visible {
+      color: var(--ink);
+      border-color: rgba(46,70,80,.46);
+    }
+
+    .gallery-toggle:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+    }
+
+    .photo-gallery.is-collapsed .gallery-track {
+      max-height: 0;
+      opacity: 0;
+      transform: translateY(-8px);
+      pointer-events: none;
+      overflow: hidden;
     }
 
     .gallery-photo {
@@ -797,7 +837,7 @@
       }
 
       .photo-gallery {
-        top: 224px;
+        top: 236px;
         right: 18px;
         width: 164px;
       }
@@ -977,6 +1017,7 @@
     </section>
 
     <section class="photo-gallery" id="photoGallery" aria-label="Открытые фотографии" hidden>
+      <button class="gallery-toggle" id="galleryToggle" type="button" aria-controls="galleryTrack" aria-expanded="true">Скрыть фото</button>
       <div class="gallery-track" id="galleryTrack"></div>
     </section>
 
@@ -1037,6 +1078,7 @@
       const switchFlash = document.getElementById("switchFlash");
       const photoGallery = document.getElementById("photoGallery");
       const galleryTrack = document.getElementById("galleryTrack");
+      const galleryToggle = document.getElementById("galleryToggle");
       const photoDialog = document.getElementById("photoDialog");
       const photoDialogImage = document.getElementById("photoDialogImage");
       const photoDialogClose = document.getElementById("photoDialogClose");
@@ -1045,10 +1087,12 @@
       const zoomOut = document.getElementById("zoomOut");
 
       const galleryStorageKey = "uchurch.landing.unlockedPhotos.v1";
+      const galleryCollapsedStorageKey = "uchurch.landing.galleryCollapsed.v1";
 
       let game = "lights";
       let moves = 0;
       let unlockedPhotos = loadUnlockedPhotos();
+      let galleryCollapsed = loadGalleryCollapsed();
       let photoCycle = unlockedPhotos.length ? Math.max(...unlockedPhotos) : -1;
       let lights = Array(9).fill(false);
       let puzzle = [1,2,3,4,5,6,7,8,0];
@@ -1078,6 +1122,28 @@
         }
       }
 
+      function loadGalleryCollapsed() {
+        try {
+          return localStorage.getItem(galleryCollapsedStorageKey) === "true";
+        } catch {
+          return false;
+        }
+      }
+
+      function saveGalleryCollapsed() {
+        try {
+          localStorage.setItem(galleryCollapsedStorageKey, String(galleryCollapsed));
+        } catch {
+          // The visibility preference remains active for the current visit.
+        }
+      }
+
+      function renderGalleryVisibility() {
+        photoGallery.classList.toggle("is-collapsed", galleryCollapsed);
+        galleryToggle.setAttribute("aria-expanded", String(!galleryCollapsed));
+        galleryToggle.textContent = galleryCollapsed ? "Показать фото" : "Скрыть фото";
+      }
+
       function renderGallery() {
         galleryTrack.innerHTML = "";
         unlockedPhotos.sort((a, b) => a - b).forEach(index => {
@@ -1095,6 +1161,7 @@
         const hasPhotos = unlockedPhotos.length > 0;
         photoGallery.hidden = !hasPhotos;
         page.classList.toggle("has-gallery", hasPhotos);
+        renderGalleryVisibility();
       }
 
       function unlockPhoto(index) {
@@ -1287,6 +1354,11 @@
       }
 
       photoDialogClose.addEventListener("click", closePhoto);
+      galleryToggle.addEventListener("click", () => {
+        galleryCollapsed = !galleryCollapsed;
+        saveGalleryCollapsed();
+        renderGalleryVisibility();
+      });
       zoomIn.addEventListener("click", () => setPhotoZoom(photoZoomLevel + .5));
       zoomOut.addEventListener("click", () => setPhotoZoom(photoZoomLevel - .5));
       photoDialogImage.addEventListener("dblclick", () => setPhotoZoom(photoZoomLevel === 1 ? 2 : 1));
