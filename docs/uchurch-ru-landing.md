@@ -23,3 +23,17 @@
 Проверка после размещения: `https://uchurch.ru` отвечает по HTTPS, обе ссылки
 ведут на нужные hostname, а страница не содержит данных, паролей, приглашений
 или recovery материала.
+
+## Индексация
+
+`uchurch.ru` является единственным публичным индексируемым адресом. Его
+canonical URL, описание, Open Graph metadata, `robots.txt` и `sitemap.xml`
+хранятся рядом с HTML. Sitemap содержит только главную страницу.
+
+`staging.uchurch.ru` и `pilot.uchurch.ru` не входят в sitemap и возвращают
+`X-Robots-Tag: noindex, nofollow` из Nginx. Это указание поисковику, а не
+средство защиты или способ скрыть публично доступный адрес.
+
+После размещения владелец добавляет доменное свойство `uchurch.ru` в Google
+Search Console, отправляет `https://uchurch.ru/sitemap.xml` и запрашивает
+индексацию только главной страницы.

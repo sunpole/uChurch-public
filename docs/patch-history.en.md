@@ -171,6 +171,7 @@ this index does not manufacture patch notes for it.
 | v17.11.91 | Split new-database setup into clear steps: church name, first operator, then the working interface. A stored operator is selected after an opened package passes validation. |
 | v17.11.92 | Stabilized Pilot loading so records and the Table cannot appear before the current step is known. Removed false limits during rapid refreshes and verified database creation plus operator selection on desktop and phone widths. |
 | v17.11.93 | Established encrypted `.uchurchdb` as the owner-held working format. Migration, edit, add, download and reopen were proved using a synthetic copy only. |
+| v17.11.94 | Added canonical metadata, robots rules and a one-URL sitemap for `uchurch.ru`; Pilot and staging now use server-side `noindex` without treating it as access control. |
 
 ## Next
 
