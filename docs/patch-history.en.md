@@ -176,6 +176,7 @@ this index does not manufacture patch notes for it.
 | v17.11.96 | Each solved picture puzzle now leaves its photograph in a small persistent browser gallery with an accessible zoom viewer. |
 | v17.11.97 | Fixed a live boot regression in Help and added one persistent smooth Hide/Show control to the unlocked photo gallery. |
 | v17.11.98 | Demo now enters directly with its sole Demo operator. Explicit session end removes the temporary workspace and returns to uchurch.ru without exposing the retired entry screen. |
+| v17.11.99 | Updated a vulnerable transitive server dependency without moving to a new Express major or changing database/session behavior. The production dependency audit returns no known findings. |
 
 ## Next
 
