@@ -175,6 +175,7 @@ this index does not manufacture patch notes for it.
 | v17.11.95 | Separated the mini-game hint and counter from the board, restored normal zoom, and added reduced-motion support without changing the author-designed composition. |
 | v17.11.96 | Each solved picture puzzle now leaves its photograph in a small persistent browser gallery with an accessible zoom viewer. |
 | v17.11.97 | Fixed a live boot regression in Help and added one persistent smooth Hide/Show control to the unlocked photo gallery. |
+| v17.11.98 | Demo now enters directly with its sole Demo operator. Explicit session end removes the temporary workspace and returns to uchurch.ru without exposing the retired entry screen. |
 
 ## Next
 

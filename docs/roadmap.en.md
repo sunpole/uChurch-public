@@ -8,6 +8,8 @@
 3. Publish Russian development updates through uNews from the public storefront.
 4. `uchurch.ru` is the public entry: Demo points only to synthetic staging and
    pre-alpha points to a separate protected environment.
+5. Demo enters with its sole synthetic operator. Explicit session ending
+   removes the temporary workspace and returns to `uchurch.ru`.
 
 ## Before the Working Closed Pilot
 
