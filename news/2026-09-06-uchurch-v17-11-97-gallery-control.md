@@ -4,10 +4,11 @@ project: uChurch
 series: uchurch
 title: "Фотогалерею можно спокойно скрыть"
 version: 17.11.97
-queued_at: 2026-09-06T16:30:00Z
+queued_at: 2026-09-06T16:10:00Z
 repo_url: https://github.com/sunpole/uChurch-public
 web_url: https://uchurch.ru
 image: 2026-09-06-uchurch-v17-11-97-gallery-control.png
+image_origin: real
 ---
 
 Короткий текст для Telegram:
