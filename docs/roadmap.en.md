@@ -10,6 +10,8 @@
    pre-alpha points to a separate protected environment.
 5. Demo enters with its sole synthetic operator. Explicit session ending
    removes the temporary workspace and returns to `uchurch.ru`.
+6. An encrypted working copy is checked by reopening before download; the owner
+   keeps it and its matching recovery file manually and separately.
 
 ## Before the Working Closed Pilot
 
@@ -21,7 +23,8 @@
    evidence-based limits, alerts and load checks.
 
 Permanent cloud storage, accounts, collaboration and payments are not part of
-the first web beta.
+the first web beta. Google Drive remains external owner-held manual backup,
+not an integration with uChurch.
 
 The synthetic Pilot now completes the encrypted database cycle: copy migration,
 edit, add, download and reopen. The next step is the same controlled cycle on a

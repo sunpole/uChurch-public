@@ -22,6 +22,9 @@ developer repository.
   prepared without publishing data.
 - **v17.11.28-v17.11.35**: an unconnected mode, isolated workspaces, a
   synthetic Demo database and safe People Trash were added.
+- **v17.11.100**: pending saves complete before an encrypted working copy is
+  downloaded, and the new package is rechecked without publishing database or
+  recovery material.
 
 ## Interface and Start Flow
 
