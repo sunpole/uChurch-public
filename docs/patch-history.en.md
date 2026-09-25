@@ -178,6 +178,8 @@ this index does not manufacture patch notes for it.
 | v17.11.98 | Demo now enters directly with its sole Demo operator. Explicit session end removes the temporary workspace and returns to uchurch.ru without exposing the retired entry screen. |
 | v17.11.99 | Updated a vulnerable transitive server dependency without moving to a new Express major or changing database/session behavior. The production dependency audit returns no known findings. |
 | v17.11.100 | Before downloading an encrypted working copy, the CRM now completes pending saves and rechecks the created package. Each new copy has separate repeatable database and recovery downloads; there is no automatic cloud upload. |
+| v17.11.101 | An isolated synthetic database confirmed the core CRM cycle: Table, Card, create, search, duplicate, People Trash, restore and package reopen. |
+| v17.11.102 | After moving services to the `.pro` domain, the separate Pilot again supports New/Open: create a temporary database or open an encrypted `.uchurchdb`, choose an operator and clean up the session. Verification used synthetic data only. |
 
 ## Next
 

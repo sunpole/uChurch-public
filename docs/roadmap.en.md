@@ -6,10 +6,10 @@
 2. Synthetic staging remains the permanent Demo, while a separate Pilot guides
    the user through creating a database or opening a protected owner copy.
 3. Publish Russian development updates through uNews from the public storefront.
-4. `uchurch.ru` is the public entry: Demo points only to synthetic staging and
-   pre-alpha points to a separate protected environment.
+4. `uchurch.pro` is the public entry: Demo points only to synthetic staging and
+   the work entry points to a separate Pilot.
 5. Demo enters with its sole synthetic operator. Explicit session ending
-   removes the temporary workspace and returns to `uchurch.ru`.
+   removes the temporary workspace and returns to `uchurch.pro`.
 6. An encrypted working copy is checked by reopening before download; the owner
    keeps it and its matching recovery file manually and separately.
 
@@ -26,6 +26,7 @@ Permanent cloud storage, accounts, collaboration and payments are not part of
 the first web beta. Google Drive remains external owner-held manual backup,
 not an integration with uChurch.
 
-The synthetic Pilot now completes the encrypted database cycle: copy migration,
-edit, add, download and reopen. The next step is the same controlled cycle on a
-separate owner database copy without changing the original.
+The `.pro` Pilot supports creating a new temporary database and opening an
+encrypted `.uchurchdb` without invitations in the current open-MVP mode. The
+complete New/Open cycle, operator choice and session cleanup were checked only
+with synthetic data.
