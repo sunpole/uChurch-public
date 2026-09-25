@@ -180,6 +180,7 @@ this index does not manufacture patch notes for it.
 | v17.11.100 | Before downloading an encrypted working copy, the CRM now completes pending saves and rechecks the created package. Each new copy has separate repeatable database and recovery downloads; there is no automatic cloud upload. |
 | v17.11.101 | An isolated synthetic database confirmed the core CRM cycle: Table, Card, create, search, duplicate, People Trash, restore and package reopen. |
 | v17.11.102 | After moving services to the `.pro` domain, the separate Pilot again supports New/Open: create a temporary database or open an encrypted `.uchurchdb`, choose an operator and clean up the session. Verification used synthetic data only. |
+| v17.11.103 | Pilot now gives a neutral temporary-limit response for repeated openings, and Back during new-database setup preserves the entered church name. |
 
 ## Next
 

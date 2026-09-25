@@ -6,7 +6,7 @@ Public product portal, release catalog and future safe Demo for a church CRM.
 
 **Public entry:** https://uchurch.pro/ ([landing source](landing/uchurch.ru/index.html))
 
-**Current public release:** v17.11.102
+**Current public release:** v17.11.103
 
 ## What is public
 

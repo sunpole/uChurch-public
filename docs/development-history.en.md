@@ -25,9 +25,10 @@ developer repository.
 - **v17.11.100**: pending saves complete before an encrypted working copy is
   downloaded, and the new package is rechecked without publishing database or
   recovery material.
-- **v17.11.101-v17.11.102**: synthetic checks confirmed the daily CRM cycle,
+- **v17.11.101-v17.11.103**: synthetic checks confirmed the daily CRM cycle,
   and the move to `.pro` restored the Pilot flow for creating a new temporary
-  database or opening an encrypted user package.
+  database or opening an encrypted user package; its temporary limits and
+  new-database Back step are clearer.
 
 ## Interface and Start Flow
 
