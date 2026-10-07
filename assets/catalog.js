@@ -634,5 +634,11 @@ window.UCHURCH_CATALOG = [
     "version": "v17.11.108",
     "ru": "SESSION-SAVE: активная работа без стандартного абсолютного лимита; предупреждение через 25 минут простоя, очистка через 30, экспорт до выхода, почасовое напоминание, разрешённые браузерные автокопии и последний подготовленный пакет после истечения. Приёмка оператором остаётся открытой.",
     "en": "SESSION-SAVE: no default active-work absolute cap; warning at 25 idle minutes, cleanup at 30, export before exit, hourly reminders, opt-in verified browser copies and a retained prepared package after expiry. Operator acceptance remains open."
+  },
+  {
+    "stage": "product",
+    "version": "v17.11.109",
+    "ru": "RECOVER1: после 30 минут простоя работа блокируется, проверенная зашифрованная копия доступна ещё 30 минут в том же браузере без предварительного экспорта; SHA256 всех частей и метаданных, пароль при создании, отдельное получение recovery и сохранение формата v1. Перезапуск сервера не покрыт; приёмка Ольгой открыта.",
+    "en": "RECOVER1: work locks after 30 idle minutes; a verified encrypted snapshot remains downloadable for 30 more minutes in the same browser without prior export; all-part and metadata SHA256, creation password, separate recovery download and unchanged v1 format. Server restart is not covered; operator acceptance remains open."
   }
 ];

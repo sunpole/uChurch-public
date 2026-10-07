@@ -185,6 +185,7 @@ this index does not manufacture patch notes for it.
 | v17.11.107 | Explicitly ending a temporary Demo session always returns to the current `https://uchurch.pro/` home; the three-address public map is recorded for recovery. |
 
 | v17.11.108 | SESSION-SAVE: no default active-work absolute cap; warning at 25 idle minutes, cleanup at 30, export before exit, hourly reminders, opt-in verified browser copies and a retained prepared package after expiry. Operator acceptance remains open. |
+| v17.11.109 | RECOVER1: work locks after 30 idle minutes; a verified encrypted snapshot remains downloadable for 30 more minutes in the same browser without prior export; all-part and metadata SHA256, creation password, separate recovery download and unchanged v1 format. Server restart is not covered; operator acceptance remains open. |
 
 ## Next
 

@@ -41,6 +41,12 @@ developer repository.
 
 ## Current Transition
 
+- **v17.11.109**: RECOVER1 adds independent owner-only access to a verified
+  encrypted snapshot for 30 more minutes after idle expiry, without prior
+  manual export. All database parts and metadata are compared; creation
+  requires a password. Server memory is not independent backup; operator
+  acceptance remains open.
+
 - **v17.11.108**: SESSION-SAVE removes the default active-work 30-minute cap;
   adds nonblocking idle warnings, export before exit, hourly reminders and
   opt-in verified automatic copies. Synthetic checks passed; operator

@@ -15,8 +15,9 @@
 
 ## Next Open-MVP Debts
 
-1. SESSION-SAVE: remove the active-work 30-minute cap, provide a nonblocking
-   warning and export, and await operator acceptance before closing the issue.
+1. SESSION-SAVE / RECOVER1: active work has no 30-minute cap; warnings do not
+   block export and an encrypted snapshot remains downloadable for 30 minutes
+   after idle expiry. Await operator acceptance before closing the issue.
 2. SHOWCASE: complete the public history and reconcile it with accepted patches.
 3. SR1: measure load and implement monitoring, alerts and proven resource limits.
 4. DR1: demonstrate recovery of source, site and owner-held database copies.
