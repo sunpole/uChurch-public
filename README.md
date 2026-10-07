@@ -24,6 +24,7 @@ audit logs, screenshots of real CRM records, credentials or recovery keys.
 - [Active address map and recovery boundary](docs/active-domain-map.md)
 - [Open development tasks](docs/development-debt.ru.md)
 - [SESSION-SAVE release and remaining limits](docs/release-v17.11.108.md)
+- [Confirmed deployment and publication receipt](docs/release-v17.11.108-receipt.md)
 - [Public news rules](news/README.md)
 
 Copyright (c) 2026 Anton Mahomedov. All rights reserved. See [LICENSE.md](LICENSE.md).
