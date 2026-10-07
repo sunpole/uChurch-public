@@ -13,14 +13,16 @@
 6. An encrypted working copy is checked by reopening before download; the owner
    keeps it and its matching recovery file manually and separately.
 
-## Before the Working Closed Pilot
+## Next Open-MVP Debts
 
-1. Verify the complete owner-copy cycle: open, edit, save, download and reopen.
-2. Compare source and result data while keeping the original database untouched.
-3. Give the owner concise instructions for storing the encrypted working copy
-   and ending each temporary session safely.
-4. After the first controlled pilot, complete SR1 with measured VPS monitoring,
-   evidence-based limits, alerts and load checks.
+1. SESSION-SAVE: remove the active-work 30-minute cap, provide a nonblocking
+   warning and export, and await operator acceptance before closing the issue.
+2. SHOWCASE: complete the public history and reconcile it with accepted patches.
+3. SR1: measure load and implement monitoring, alerts and proven resource limits.
+4. DR1: demonstrate recovery of source, site and owner-held database copies.
+5. UX3/UX2: consistent navigation, breadcrumbs and visual design after save verification.
+
+Detailed statuses: [development debt](development-debt.ru.md).
 
 Permanent cloud storage, accounts, collaboration and payments are not part of
 the first web beta. Google Drive remains external owner-held manual backup,

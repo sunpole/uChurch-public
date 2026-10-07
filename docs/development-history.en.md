@@ -29,6 +29,10 @@ developer repository.
   and the move to `.pro` restored the Pilot flow for creating a new temporary
   database or opening an encrypted user package; its temporary limits and
   new-database Back step are clearer.
+- **v17.11.104-v17.11.107**: after the infrastructure move, technical
+  environments were aligned around `.pro`. Ending a temporary Demo session
+  now uses only the active public entry, and a safe address map was added to
+  the recovery documentation.
 
 ## Interface and Start Flow
 
@@ -37,6 +41,6 @@ developer repository.
 
 ## Current Transition
 
-The next goal is a web product. This public storefront will show clear
-development milestones and a future synthetic Demo. Real church databases will
-not be accepted by a server until a separate security programme is complete.
+An open MVP runs on `pilot.uchurch.pro` alongside a separate synthetic Demo.
+Next steps cover session work preservation, measured infrastructure checks,
+recovery and consistent navigation. See the [current task queue](development-debt.ru.md).

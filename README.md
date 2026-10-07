@@ -4,9 +4,9 @@ Public product portal, release catalog and future safe Demo for a church CRM.
 
 **Website:** https://sunpole.github.io/uChurch-public/
 
-**Public entry:** https://uchurch.pro/ ([landing source](landing/uchurch.ru/index.html))
+**Public entry:** https://uchurch.pro/ ([landing source](landing/uchurch.pro/index.html))
 
-**Current public release:** v17.11.103
+**Current public release:** v17.11.107
 
 ## What is public
 
@@ -21,6 +21,8 @@ audit logs, screenshots of real CRM records, credentials or recovery keys.
 
 - [Development catalog](docs/patch-history.ru.md) / [English catalog](docs/patch-history.en.md)
 - [Roadmap](docs/roadmap.ru.md) / [English roadmap](docs/roadmap.en.md)
+- [Active address map and recovery boundary](docs/active-domain-map.md)
+- [Open development tasks](docs/development-debt.ru.md)
 - [Public news rules](news/README.md)
 
 Copyright (c) 2026 Anton Mahomedov. All rights reserved. See [LICENSE.md](LICENSE.md).
