@@ -7,6 +7,8 @@ version: 17.11.103
 queued_at: 2026-09-25T13:15:00Z
 repo_url: https://github.com/sunpole/uChurch-public
 web_url: https://uchurch.pro/
+image: 2026-10-07-uchurch-v17-11-103-history.png
+image_origin: real
 ---
 
 Короткий текст для Telegram:

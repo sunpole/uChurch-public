@@ -41,6 +41,11 @@ developer repository.
 
 ## Current Transition
 
+- **v17.11.108**: SESSION-SAVE removes the default active-work 30-minute cap;
+  adds nonblocking idle warnings, export before exit, hourly reminders and
+  opt-in verified automatic copies. Synthetic checks passed; operator
+  acceptance remains open.
+
 An open MVP runs on `pilot.uchurch.pro` alongside a separate synthetic Demo.
 Next steps cover session work preservation, measured infrastructure checks,
 recovery and consistent navigation. See the [current task queue](development-debt.ru.md).

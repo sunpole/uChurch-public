@@ -12,22 +12,10 @@ window.UCHURCH_CATALOG = [
     "en": "Local CRM with a working Table and editable person Card."
   },
   {
-    "stage": "product",
-    "version": "v15.0",
-    "ru": "Зафиксирована локальная CRM с таблицей и редактированием карточки.",
-    "en": "Recorded a local CRM with a working Table and editable person Card."
-  },
-  {
     "stage": "foundation",
     "version": "v15.1",
     "ru": "Рабочий prerelease: мультивыбор, переключение базы и RU/EN интерфейс.",
     "en": "Working prerelease: multiselects, data-source switching and RU/EN UI."
-  },
-  {
-    "stage": "product",
-    "version": "v15.1",
-    "ru": "Рабочий prerelease: мультивыбор, переключение баз и RU/EN интерфейс; начата подготовка модульной архитектуры.",
-    "en": "Working prerelease with multiselects, data-source switching and RU/EN UI; preparation for modular architecture began."
   },
   {
     "stage": "foundation",
@@ -144,12 +132,6 @@ window.UCHURCH_CATALOG = [
     "en": "Fixed a critical navigation failure after widget changes."
   },
   {
-    "stage": "product",
-    "version": "v17.6.1",
-    "ru": "Исправлена критическая ошибка загрузки каталога виджетов.",
-    "en": "Fixed a critical widget-catalog loading error."
-  },
-  {
     "stage": "card",
     "version": "v17.7",
     "ru": "Админка очищена от проблем кодировки; добавлен аудит ключей.",
@@ -168,22 +150,10 @@ window.UCHURCH_CATALOG = [
     "en": "Normalized the uChurch brand and color-group localization."
   },
   {
-    "stage": "product",
-    "version": "v17.8.1",
-    "ru": "Видимое имя проекта приведено к uChurch.",
-    "en": "Normalized the visible project name to uChurch."
-  },
-  {
     "stage": "card",
     "version": "v17.8.2",
     "ru": "Карточка получила более читаемый порядок чекбоксов.",
     "en": "Card checkbox order became more readable."
-  },
-  {
-    "stage": "product",
-    "version": "v17.8.2",
-    "ru": "Списки чекбоксов в Карточке получили предсказуемый порядок чтения.",
-    "en": "Made Card checkbox lists follow a predictable reading order."
   },
   {
     "stage": "quality",
@@ -192,19 +162,7 @@ window.UCHURCH_CATALOG = [
     "en": "Dictionaries gained required fields, duplicate protection and used-key checks."
   },
   {
-    "stage": "product",
-    "version": "v17.9.0",
-    "ru": "Добавлена проверка справочников: обязательные поля и защита от повторяющихся ключей.",
-    "en": "Added dictionary validation for required fields and duplicate keys."
-  },
-  {
     "stage": "quality",
-    "version": "v17.9.1",
-    "ru": "Добавлена аналитика участия в домашних группах.",
-    "en": "Added home-group participation analytics."
-  },
-  {
-    "stage": "product",
     "version": "v17.9.1",
     "ru": "Добавлена аналитика участия в домашних группах.",
     "en": "Added home-group participation analytics."
@@ -216,22 +174,10 @@ window.UCHURCH_CATALOG = [
     "en": "Widgets gained favorites and an ordered catalog."
   },
   {
-    "stage": "product",
-    "version": "v17.9.2",
-    "ru": "Виджеты получили избранное и раздел «Другие виджеты».",
-    "en": "Added widget favorites and the Other widgets area."
-  },
-  {
     "stage": "quality",
     "version": "v17.9.3",
     "ru": "Этапы духовного роста стали видимыми в Таблице и Админке.",
     "en": "Spiritual-growth stages became visible in Table and Admin."
-  },
-  {
-    "stage": "product",
-    "version": "v17.9.3",
-    "ru": "Этапы духовного роста стали видимыми в Таблице и Админке.",
-    "en": "Made spiritual-growth stages visible in Table and Admin."
   },
   {
     "stage": "quality",
@@ -240,22 +186,10 @@ window.UCHURCH_CATALOG = [
     "en": "Widget rendering moved into a dedicated module."
   },
   {
-    "stage": "product",
-    "version": "v17.9.4",
-    "ru": "Отрисовка виджетов вынесена в отдельный модуль.",
-    "en": "Moved widget rendering into a dedicated module."
-  },
-  {
     "stage": "quality",
     "version": "v17.9.5",
     "ru": "Устранены видимые ошибки кодировки.",
     "en": "Removed visible text-encoding issues."
-  },
-  {
-    "stage": "product",
-    "version": "v17.9.5",
-    "ru": "Исправлены видимые проблемы кодировки и проведена browser-проверка текста.",
-    "en": "Fixed visible text-encoding issues and verified browser text."
   },
   {
     "stage": "quality",
@@ -264,22 +198,10 @@ window.UCHURCH_CATALOG = [
     "en": "Added a non-destructive smoke check for the running CRM."
   },
   {
-    "stage": "product",
-    "version": "v17.9.6",
-    "ru": "Добавлен недеструктивный smoke-тест работающего CRM.",
-    "en": "Added a non-destructive running-CRM smoke test."
-  },
-  {
     "stage": "quality",
     "version": "v17.9.7",
     "ru": "Help и вычисления виджетов разделены на поддерживаемые модули.",
     "en": "Help and widget calculations were split into maintainable modules."
-  },
-  {
-    "stage": "product",
-    "version": "v17.9.7",
-    "ru": "Логика Help отделена от запуска приложения.",
-    "en": "Separated Help behavior from application startup."
   },
   {
     "stage": "quality",
@@ -288,22 +210,10 @@ window.UCHURCH_CATALOG = [
     "en": "Card split into model, rendering and save flow."
   },
   {
-    "stage": "product",
-    "version": "v17.9.8",
-    "ru": "Карточка разделена на модель, отрисовку и поток сохранения.",
-    "en": "Split Card behavior into model, rendering and save flow."
-  },
-  {
     "stage": "quality",
     "version": "v17.9.9",
     "ru": "Безопасность справочников и форматирование Таблицы выделены отдельно.",
     "en": "Dictionary safety and Table formatting were isolated."
-  },
-  {
-    "stage": "product",
-    "version": "v17.9.9",
-    "ru": "Проверки безопасности справочников вынесены в отдельную логику.",
-    "en": "Isolated dictionary-safety checks from Admin rendering."
   },
   {
     "stage": "widgets",
@@ -312,22 +222,10 @@ window.UCHURCH_CATALOG = [
     "en": "Admin split into separate rendering and localization modules."
   },
   {
-    "stage": "product",
-    "version": "v17.10.0",
-    "ru": "Отрисовка Админки выделена в отдельный модуль.",
-    "en": "Moved Admin rendering into its own module."
-  },
-  {
     "stage": "widgets",
     "version": "v17.10.1",
     "ru": "Каталог и избранное виджетов стали самостоятельными источниками данных.",
     "en": "Widget catalog and favorites became independent data sources."
-  },
-  {
-    "stage": "product",
-    "version": "v17.10.1",
-    "ru": "Каталог виджетов выделен в самостоятельный источник данных.",
-    "en": "Made the widget catalog an independent data source."
   },
   {
     "stage": "widgets",
@@ -336,31 +234,13 @@ window.UCHURCH_CATALOG = [
     "en": "Full widget catalog gained integrity and RU/EN checks."
   },
   {
-    "stage": "product",
-    "version": "v17.10.2",
-    "ru": "Smoke-проверка охватила целостность полного каталога виджетов и RU/EN.",
-    "en": "Extended smoke QA to widget-catalog integrity and RU/EN completeness."
-  },
-  {
     "stage": "widgets",
     "version": "v17.10.3",
     "ru": "Убран дублирующий список идентификаторов виджетов.",
     "en": "Removed duplicate widget-identifier list."
   },
   {
-    "stage": "product",
-    "version": "v17.10.3",
-    "ru": "Убран дублирующий список идентификаторов виджетов.",
-    "en": "Removed a duplicate widget-identifier list."
-  },
-  {
     "stage": "widgets",
-    "version": "v17.10.4",
-    "ru": "Исправлена визуальная регрессия Help и Админки.",
-    "en": "Fixed a Help/Admin visual regression."
-  },
-  {
-    "stage": "product",
     "version": "v17.10.4",
     "ru": "Исправлена визуальная регрессия Help и Админки.",
     "en": "Fixed a Help/Admin visual regression."
@@ -372,22 +252,10 @@ window.UCHURCH_CATALOG = [
     "en": "Restored compact dictionary editor and refined status grid."
   },
   {
-    "stage": "product",
-    "version": "v17.10.5",
-    "ru": "Возвращён компактный редактор справочников Админки.",
-    "en": "Restored compact Admin dictionary editing."
-  },
-  {
     "stage": "widgets",
     "version": "v17.10.6",
     "ru": "Мини-виджеты получили плотную компоновку данных и диаграмм.",
     "en": "Mini widgets gained denser data-and-chart layouts."
-  },
-  {
-    "stage": "product",
-    "version": "v17.10.6",
-    "ru": "Мини-виджеты Dashboard получили компоновку «диаграмма слева, данные справа».",
-    "en": "Gave Dashboard mini widgets a chart-left/data-right layout."
   },
   {
     "stage": "widgets",
@@ -396,19 +264,7 @@ window.UCHURCH_CATALOG = [
     "en": "Added safe mini-card previews in Widget Store."
   },
   {
-    "stage": "product",
-    "version": "v17.10.7",
-    "ru": "В магазине виджетов появились безопасные previews mini-карточек.",
-    "en": "Added safe mini-card previews to Widget Store."
-  },
-  {
     "stage": "widgets",
-    "version": "v17.10.8",
-    "ru": "Добавлено поле «Откуда пришёл».",
-    "en": "Added the Came from field."
-  },
-  {
-    "stage": "product",
     "version": "v17.10.8",
     "ru": "Добавлено поле «Откуда пришёл».",
     "en": "Added the Came from field."
@@ -418,12 +274,6 @@ window.UCHURCH_CATALOG = [
     "version": "v17.10.9",
     "ru": "Добавлено проверяемое хранение пресетов мини-виджетов.",
     "en": "Added validated mini-widget preset storage."
-  },
-  {
-    "stage": "product",
-    "version": "v17.10.9",
-    "ru": "Добавлено безопасное хранение и проверка пресетов мини-виджетов.",
-    "en": "Added validated storage for mini-widget presets."
   },
   {
     "stage": "registry",
@@ -778,5 +628,11 @@ window.UCHURCH_CATALOG = [
     "version": "v17.11.107",
     "ru": "Явное завершение временной Demo-сессии всегда ведёт на актуальную главную https://uchurch.pro/; публичная карта трёх рабочих адресов зафиксирована для восстановления.",
     "en": "Explicitly ending a temporary Demo session always returns to the current https://uchurch.pro/ home; the three-address public map is recorded for recovery."
+  },
+  {
+    "stage": "product",
+    "version": "v17.11.108",
+    "ru": "SESSION-SAVE: активная работа без стандартного абсолютного лимита; предупреждение через 25 минут простоя, очистка через 30, экспорт до выхода, почасовое напоминание, разрешённые браузерные автокопии и последний подготовленный пакет после истечения. Приёмка оператором остаётся открытой.",
+    "en": "SESSION-SAVE: no default active-work absolute cap; warning at 25 idle minutes, cleanup at 30, export before exit, hourly reminders, opt-in verified browser copies and a retained prepared package after expiry. Operator acceptance remains open."
   }
 ];

@@ -6,7 +6,7 @@ Public product portal, release catalog and future safe Demo for a church CRM.
 
 **Public entry:** https://uchurch.pro/ ([landing source](landing/uchurch.pro/index.html))
 
-**Current public release:** v17.11.107
+**Current public release:** v17.11.108
 
 ## What is public
 
@@ -23,6 +23,7 @@ audit logs, screenshots of real CRM records, credentials or recovery keys.
 - [Roadmap](docs/roadmap.ru.md) / [English roadmap](docs/roadmap.en.md)
 - [Active address map and recovery boundary](docs/active-domain-map.md)
 - [Open development tasks](docs/development-debt.ru.md)
+- [SESSION-SAVE release and remaining limits](docs/release-v17.11.108.md)
 - [Public news rules](news/README.md)
 
 Copyright (c) 2026 Anton Mahomedov. All rights reserved. See [LICENSE.md](LICENSE.md).

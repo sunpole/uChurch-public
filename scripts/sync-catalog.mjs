@@ -2,7 +2,9 @@ import fs from 'node:fs';
 import vm from 'node:vm';
 const scope = { window: {} };
 vm.runInNewContext(fs.readFileSync('assets/catalog.js', 'utf8'), scope);
-const catalog = Array.from(scope.window.UCHURCH_CATALOG);
+const unique = new Map();
+for (const item of scope.window.UCHURCH_CATALOG) if (!unique.has(item.version)) unique.set(item.version, item);
+const catalog = Array.from(unique.values());
 const readHistory = language => new Map(fs.readFileSync(`docs/patch-history.${language}.md`, 'utf8')
   .split(/\r?\n/).filter(line => /^\| v/.test(line)).map(line => {
     const [, version, description] = line.split('|');
@@ -11,6 +13,7 @@ const readHistory = language => new Map(fs.readFileSync(`docs/patch-history.${la
 const ru = readHistory('ru'), en = readHistory('en');
 const number = value => Number(value.match(/v17\.11\.(\d+)/)?.[1]);
 const covered = new Set();
+const versions = new Set(catalog.map(item => item.version));
 for (const item of catalog) {
   const first = number(item.version);
   if (!Number.isFinite(first)) continue;
@@ -18,7 +21,7 @@ for (const item of catalog) {
   for (let n = first; n <= end; n++) covered.add(n);
 }
 for (const [version, description] of ru) {
-  if (covered.has(number(version))) continue;
+  if (versions.has(version) || covered.has(number(version))) continue;
   if (!en.has(version)) throw new Error(`Missing English history: ${version}`);
   catalog.push({ stage: 'product', version, ru: description, en: en.get(version) });
 }

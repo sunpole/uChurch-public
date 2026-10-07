@@ -24,7 +24,8 @@ try {
   page.on('pageerror', e => errors.push(e.message));
   await page.goto(`http://127.0.0.1:${server.address().port}/`);
   await page.locator('.release-row').first().waitFor();
-  assert.ok(await page.locator('.release-row').count() >= 130);
+  assert.ok(await page.locator('.release-row').count() >= 100);
+  assert.equal(await page.evaluate(() => new Set(window.UCHURCH_CATALOG.map(item => item.version)).size), await page.locator('.release-row').count(), 'no duplicate version rows');
   assert.ok(await page.locator('#debt').isVisible());
   const version = process.argv[2] || 'v17.11.108';
   await page.locator('[data-search]').fill(version);
