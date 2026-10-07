@@ -19,9 +19,16 @@ Date: 2026-10-08 (Europe/Minsk).
   links and four-viewport checks passed. The news image shows the actual expiry
   dialog from an isolated synthetic browser test, not a real church database.
 
-Public push, Pages and Telegram confirmation are pending at this receipt's
-initial commit. Their verified outcomes will be appended without moving the
-immutable release tag.
+Public source tag: 7e5476d8734c89dd57fa41b9a6887245eeb4c131. Both GitHub releases
+exist. Pages deployment 37694736665 succeeded; live browser verification
+confirms the exact 107-entry source catalog, v17.11.109 search, RU/EN and
+four viewports without JavaScript errors.
+
+uNews workflow 37694912157 succeeded and recorded exactly one sendPhoto for
+this version: https://t.me/uNewsLog/146, published 2026-10-07T22:15:03.314Z.
+The Russian 769-character caption is untruncated, with one link and one hashtag
+set. Earlier uChurch posts were not repeated. These facts are a documentation
+follow-up; neither immutable release tag was moved.
 
 Owner acceptance remains open. Snapshots are memory-only: server restart/crash,
 expired browser credentials and unsent edits are not covered. SEC1, SR1 and
