@@ -15,6 +15,10 @@
 
 ## Next Open-MVP Debts
 
+TABLE-COLUMNS v17.11.110 corrects column visibility/order; engineering checks
+and installation are tracked in the [release note](release-v17.11.110.md).
+Operator acceptance, adjacent save-error feedback and required CI remain distinct.
+
 1. SESSION-SAVE / RECOVER1: active work has no 30-minute cap; warnings do not
    block export and an encrypted snapshot remains downloadable for 30 minutes
    after idle expiry. Await operator acceptance before closing the issue.

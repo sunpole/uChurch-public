@@ -640,5 +640,11 @@ window.UCHURCH_CATALOG = [
     "version": "v17.11.109",
     "ru": "RECOVER1: после 30 минут простоя работа блокируется, проверенная зашифрованная копия доступна ещё 30 минут в том же браузере без предварительного экспорта; SHA256 всех частей и метаданных, пароль при создании, отдельное получение recovery и сохранение формата v1. Перезапуск сервера не покрыт; приёмка Ольгой открыта.",
     "en": "RECOVER1: work locks after 30 idle minutes; a verified encrypted snapshot remains downloadable for 30 more minutes in the same browser without prior export; all-part and metadata SHA256, creation password, separate recovery download and unchanged v1 format. Server restart is not covered; operator acceptance remains open."
+  },
+  {
+    "stage": "product",
+    "version": "v17.11.110",
+    "ru": "TABLE-COLUMNS: настройки столбцов применяются из меню и Админки при открытом другом разделе; актуальный порядок не заменяется старым. Сортировка и ширина сохраняются, RU/EN Help объясняет два уровня выбора; отдельная регрессия проверяет ошибку сохранения и экспорт/повторное открытие.",
+    "en": "TABLE-COLUMNS: chooser and Admin changes update initialized columns from any view; current order is not overwritten by stale grid state. Sort/width remain, RU/EN Help explains both settings layers, and dedicated regression covers failed-save retry and export/reopen."
   }
 ];

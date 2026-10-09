@@ -186,6 +186,7 @@ this index does not manufacture patch notes for it.
 
 | v17.11.108 | SESSION-SAVE: no default active-work absolute cap; warning at 25 idle minutes, cleanup at 30, export before exit, hourly reminders, opt-in verified browser copies and a retained prepared package after expiry. Operator acceptance remains open. |
 | v17.11.109 | RECOVER1: work locks after 30 idle minutes; a verified encrypted snapshot remains downloadable for 30 more minutes in the same browser without prior export; all-part and metadata SHA256, creation password, separate recovery download and unchanged v1 format. Server restart is not covered; operator acceptance remains open. |
+| v17.11.110 | TABLE-COLUMNS: chooser and Admin changes update initialized columns from any view; current order is not overwritten by stale grid state. Sort/width remain, RU/EN Help explains both settings layers, and dedicated regression covers failed-save retry and export/reopen. |
 
 ## Next
 
