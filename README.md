@@ -6,7 +6,7 @@ Public product portal, release catalog and future safe Demo for a church CRM.
 
 **Public entry:** https://uchurch.pro/ ([landing source](landing/uchurch.pro/index.html))
 
-**Current documented candidate:** v17.11.112. [Deployment/publication status](docs/release-v17.11.112-receipt.md).
+**Current public source release:** v17.11.112. [Deployment/publication status](docs/release-v17.11.112-receipt.md).
 
 ## What is public
 
