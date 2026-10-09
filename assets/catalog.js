@@ -646,5 +646,11 @@ window.UCHURCH_CATALOG = [
     "version": "v17.11.110",
     "ru": "TABLE-COLUMNS: настройки столбцов применяются из меню и Админки при открытом другом разделе; актуальный порядок не заменяется старым. Сортировка и ширина сохраняются, RU/EN Help объясняет два уровня выбора; отдельная регрессия проверяет ошибку сохранения и экспорт/повторное открытие.",
     "en": "TABLE-COLUMNS: chooser and Admin changes update initialized columns from any view; current order is not overwritten by stale grid state. Sort/width remain, RU/EN Help explains both settings layers, and dedicated regression covers failed-save retry and export/reopen."
+  },
+  {
+    "stage": "product",
+    "version": "v17.11.111",
+    "ru": "GROWTH1: этапы духовного роста редактируются отдельно от статусов служений и автоматически появляются в духовном блоке Карточки. Сохраняются отметки, даты и скрытая часть справочника; проверены ошибка записи, перезагрузка и экспорт/повторное открытие без изменения формата v1.",
+    "en": "GROWTH1: spiritual growth stages have a separate editor and enter the spiritual Card group automatically. Checked values, dates and the other dictionary slice remain; regression covers save failure, reload and v1 export/reopen."
   }
 ];

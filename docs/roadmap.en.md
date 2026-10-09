@@ -15,6 +15,9 @@
 
 ## Next Open-MVP Debts
 
+GROWTH1 v17.11.111 separates spiritual growth stages and fixes their appearance
+in Card. [Release](release-v17.11.111.md); operator acceptance remains open.
+
 TABLE-COLUMNS v17.11.110 corrects column visibility/order; engineering checks
 and installation are tracked in the [release note](release-v17.11.110.md).
 Operator acceptance, adjacent save-error feedback and required CI remain distinct.

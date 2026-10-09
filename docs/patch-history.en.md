@@ -190,6 +190,8 @@ this index does not manufacture patch notes for it.
 
 ## Next
 
+| v17.11.111 | GROWTH1: spiritual growth stages have a separate editor and enter the spiritual Card group automatically. Checked values, dates and the other dictionary slice remain; regression covers save failure, reload and v1 export/reopen. |
+
 After this history is available in the public storefront, new development news
 will come only from this repository, in Russian, and only for actually
 completed stages. The next product step is a verified owner-copy cycle: open,

@@ -41,6 +41,10 @@ developer repository.
 
 ## Current Transition
 
+- **v17.11.111**: GROWTH1 separates the growth-stage editor, adds new stages
+  to Card automatically and preserves checked values/dates.
+  [Checks and release](release-v17.11.111.md).
+
 - **v17.11.110**: TABLE-COLUMNS corrects stale visibility and order after
   chooser/Admin changes from other views, with dedicated synthetic regression
   and unchanged encrypted file format. [Release status](release-v17.11.110.md).
