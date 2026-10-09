@@ -33,3 +33,17 @@ follow-up; neither immutable release tag was moved.
 Owner acceptance remains open. Snapshots are memory-only: server restart/crash,
 expired browser credentials and unsent edits are not covered. SEC1, SR1 and
 full independent DR1 rehearsal remain open.
+
+## Editorial correction, 2026-10-09
+
+Removed the personal tester-acceptance sentence from the public news source.
+Product behavior and the warning about unsent edits/server failure are unchanged.
+Public news rules now explicitly exclude personal acceptance participants.
+
+The existing Telegram post https://t.me/uNewsLog/146 was edited in place by
+caption-only repair workflow 37895603659, which completed successfully and
+recorded the repair at 2026-10-09T06:50:08Z. No new post was sent; its image,
+message ID and original publication timestamp remain unchanged. The checked
+caption is 738 characters, untruncated, with one link and one hashtag set.
+Local uNews tests and the workflow policy checks passed. Runtime version and
+immutable release tags remain v17.11.109; no application deployment was needed.
