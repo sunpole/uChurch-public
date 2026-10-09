@@ -1,5 +1,6 @@
 (() => {
-  const catalog = window.UCHURCH_CATALOG || [];
+  const catalog = [...(window.UCHURCH_CATALOG || [])]
+    .sort((a, b) => b.version.localeCompare(a.version, 'en', { numeric: true }));
   const state = { language: localStorage.getItem('uchurch-public-language') || 'ru', filter: 'all', query: '' };
   const copy = {
     ru: { search: 'Найти версию или тему', all: 'Все этапы', foundation: 'Основа', card: 'Карточка и Админка', quality: 'Качество', widgets: 'Виджеты', registry: 'Реестр', product: 'Продукт и данные', results: 'этапов показано', empty: 'Ничего не найдено. Попробуйте другое слово или этап.' },

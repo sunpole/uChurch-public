@@ -29,5 +29,6 @@ audit logs, screenshots of real CRM records, credentials or recovery keys.
 - [SESSION-SAVE previous release](docs/release-v17.11.108.md)
 - [Current deployment and publication receipt](docs/release-v17.11.111-receipt.md)
 - [Public news rules](news/README.md)
+- [Newest-first catalog and Telegram showcase links](docs/showcase-links-2026-10-09.md)
 
 Copyright (c) 2026 Anton Mahomedov. All rights reserved. See [LICENSE.md](LICENSE.md).
