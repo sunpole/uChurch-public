@@ -15,6 +15,11 @@
 
 ## Next Open-MVP Debts
 
+GROWTH-ORDER v17.11.112 fixes the separately discovered stage-order mismatch.
+Editors and Card agree after reload and package reopen.
+[Release status](release-v17.11.112-receipt.md),
+[visual chronicle](chronicle-2026-10-09.md). Operator acceptance is open.
+
 GROWTH1 v17.11.111 separates spiritual growth stages and fixes their appearance
 in Card. [Release](release-v17.11.111.md); operator acceptance remains open.
 

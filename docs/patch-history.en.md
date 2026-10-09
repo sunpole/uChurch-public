@@ -190,6 +190,8 @@ this index does not manufacture patch notes for it.
 
 | v17.11.111 | GROWTH1: spiritual growth stages have a separate editor and enter the spiritual Card group automatically. Checked values, dates and the other dictionary slice remain; regression covers save failure, reload and v1 export/reopen. |
 
+| v17.11.112 | GROWTH-ORDER: manual/alphabetical stage ordering reaches Card; both Admin editors share the same order. Regression covers failed-save retry, reload, export/reopen. Real synthetic-QA screenshots form a dated chronicle; operator acceptance remains open. |
+
 ## Next
 
 After this history is available in the public storefront, new development news

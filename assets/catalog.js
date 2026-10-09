@@ -652,5 +652,11 @@ window.UCHURCH_CATALOG = [
     "version": "v17.11.111",
     "ru": "GROWTH1: этапы духовного роста редактируются отдельно от статусов служений и автоматически появляются в духовном блоке Карточки. Сохраняются отметки, даты и скрытая часть справочника; проверены ошибка записи, перезагрузка и экспорт/повторное открытие без изменения формата v1.",
     "en": "GROWTH1: spiritual growth stages have a separate editor and enter the spiritual Card group automatically. Checked values, dates and the other dictionary slice remain; regression covers save failure, reload and v1 export/reopen."
+  },
+  {
+    "stage": "product",
+    "version": "v17.11.112",
+    "ru": "GROWTH-ORDER: ручной и алфавитный порядок этапов из Админки применяется в Карточке; оба редактора используют один порядок. Проверены отказ сохранения/повтор, reload, экспорт и повторное открытие. Добавлена хроника с реальными снимками synthetic QA; пользовательская приёмка остаётся открытой.",
+    "en": "GROWTH-ORDER: manual/alphabetical stage ordering reaches Card; both Admin editors share the same order. Regression covers failed-save retry, reload, export/reopen. Real synthetic-QA screenshots form a dated chronicle; operator acceptance remains open."
   }
 ];

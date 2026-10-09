@@ -50,6 +50,14 @@ try {
   for (const link of links) assert.equal((await page.request.get(`http://127.0.0.1:${server.address().port}/${link}`)).status(), 200, link);
   for (const [width, height] of [[1366,768],[1920,1080],[412,915],[321,568]]) {
     await page.setViewportSize({ width, height });
+    await page.locator('#chronicle').scrollIntoViewIfNeeded();
+    await page.waitForFunction(() => [...document.querySelectorAll('#chronicle img')].length === 2
+      && [...document.querySelectorAll('#chronicle img')].every(img => img.complete && img.naturalWidth > 0));
+    const figures = await page.locator('#chronicle figure').evaluateAll(nodes => nodes.map(node => {
+      const { x, y, width, height } = node.getBoundingClientRect(); return { x, y, width, height };
+    }));
+    assert.ok(figures[0].x + figures[0].width <= figures[1].x
+      || figures[0].y + figures[0].height <= figures[1].y, 'chronicle figures must not overlap');
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false, `${width}px overflow`);
   }
   await page.setViewportSize({ width: 1400, height: 900 });

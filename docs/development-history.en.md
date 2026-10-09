@@ -41,6 +41,14 @@ developer repository.
 
 ## Current Transition
 
+- **2026-10-09, v17.11.112**: a reported ordering failure exposed separate
+  dictionary and spiritual-group orders. Both editors and Card now share the
+  same order. Four-view checks cover manual/alphabetical order, failed-save
+  retry, reload and export/reopen. [Patch](release-v17.11.112.md),
+  [real synthetic-QA screenshots](chronicle-2026-10-09.md).
+  This follow-up does not retroactively claim v17.11.111 fixed ordering.
+  Operator acceptance remains separate.
+
 - **v17.11.111**: GROWTH1 separates the growth-stage editor, adds new stages
   to Card automatically and preserves checked values/dates.
   [Checks and release](release-v17.11.111.md).

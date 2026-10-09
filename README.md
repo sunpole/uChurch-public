@@ -6,7 +6,7 @@ Public product portal, release catalog and future safe Demo for a church CRM.
 
 **Public entry:** https://uchurch.pro/ ([landing source](landing/uchurch.pro/index.html))
 
-**Current public release:** v17.11.111.
+**Current documented candidate:** v17.11.112. [Deployment/publication status](docs/release-v17.11.112-receipt.md).
 
 ## What is public
 
@@ -23,11 +23,13 @@ audit logs, screenshots of real CRM records, credentials or recovery keys.
 - [Roadmap](docs/roadmap.ru.md) / [English roadmap](docs/roadmap.en.md)
 - [Active address map and recovery boundary](docs/active-domain-map.md)
 - [Open development tasks](docs/development-debt.ru.md)
-- [GROWTH1 release and remaining limits](docs/release-v17.11.111.md)
+- [GROWTH-ORDER release and remaining limits](docs/release-v17.11.112.md)
+- [Visual development chronicle](docs/chronicle-2026-10-09.md)
+- [GROWTH1 previous release](docs/release-v17.11.111.md)
 - [TABLE-COLUMNS previous release](docs/release-v17.11.110.md)
 - [RECOVER1 previous release](docs/release-v17.11.109.md)
 - [SESSION-SAVE previous release](docs/release-v17.11.108.md)
-- [Current deployment and publication receipt](docs/release-v17.11.111-receipt.md)
+- [Current deployment and publication receipt](docs/release-v17.11.112-receipt.md)
 - [Public news rules](news/README.md)
 - [Newest-first catalog and Telegram showcase links](docs/showcase-links-2026-10-09.md)
 
