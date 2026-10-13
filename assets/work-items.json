@@ -660,6 +660,28 @@
         "description": "A VPS and local limits cannot guarantee distributed-attack protection. Evaluate upstream/CDN/WAF based on measurements and requirements, with no absolute guarantees."
       },
       "source": "docs/development-debt.ru.md"
+    },
+    {
+      "number": 29,
+      "code": "DIRECTORY-UX",
+      "kind": "patch",
+      "parts": [
+        "catalog",
+        "docs",
+        "qa"
+      ],
+      "createdOn": "2026-10-13",
+      "implementedOn": "2026-10-13",
+      "version": "v17.11.115",
+      "ru": {
+        "title": "Рабочий MVP справочника: дизайн и навигация",
+        "description": "Объединены варианты 2+3: тёмная палитра, цветные теги, компактные фильтры, подробности записи, клавиатура и адаптация к старым и новым экранам. Старые записи и номера сохранены; CRM и формат базы не меняются."
+      },
+      "en": {
+        "title": "Directory MVP: design and navigation",
+        "description": "Merged directions 2+3: dark palette, colored tags, compact filters, item details, keyboard navigation and old/new screen layouts. Existing items and IDs preserved; CRM and database format unchanged."
+      },
+      "source": "docs/release-v17.11.115.md"
     }
   ]
 }

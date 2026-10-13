@@ -1,6 +1,12 @@
 window.UCHURCH_CATALOG = [
   {
     "stage": "product",
+    "version": "v17.11.115",
+    "ru": "DIRECTORY-UX: рабочий MVP публичного справочника с тёмной палитрой, цветными тегами, компактными фильтрами, подробностями записи и адаптацией от старых мониторов до 4K. Существующие номера, даты и содержание сохранены; CRM и формат базы не меняются.",
+    "en": "DIRECTORY-UX: public directory MVP with dark styling, colored tags, compact filters, item details and layouts from older monitors to 4K. Existing IDs, dates and content preserved; CRM and database format unchanged."
+  },
+  {
+    "stage": "product",
     "version": "v17.11.114",
     "ru": "DIRECTORY: публичный справочник сначала заполнен открытыми долгами; постоянные номера, два типа, части проекта и совместные фильтры по датам. Исторические патчи сохраняются отдельно до сверенного переноса. CRM и формат базы не меняются.",
     "en": "DIRECTORY: a public debt-first directory with permanent IDs, two types, project parts and combined date filters. Historical patches remain separate pending verified import. CRM behavior and database format are unchanged."

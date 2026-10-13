@@ -1,5 +1,10 @@
 # Complete Public Patch Index
 
+## v17.11.115 — DIRECTORY-UX
+
+Public directory MVP, selected dark design, colored tags and full details.
+[Release](release-v17.11.115.md), [QA](directory-ux-qa.md).
+
 ## v17.11.114 — DIRECTORY
 
 Debt-first directory with combined filters; version history remains preserved.

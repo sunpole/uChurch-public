@@ -54,7 +54,7 @@ export function selectItems(items, filters) {
   const selected = items.filter(item => (!filters.kind || item.kind === filters.kind)
     && (!filters.number || item.number === Number(filters.number))
     && filters.parts.every(part => item.parts.includes(part))
-    && (!query || `${item.code} ${item.version || ''} ${item.ru.title} ${item.ru.description} ${item.en.title} ${item.en.description}`.toLocaleLowerCase().includes(query))
+    && (!query || `#${item.number} ${item.code} ${item.version || ''} ${item.ru.title} ${item.ru.description} ${item.en.title} ${item.en.description}`.toLocaleLowerCase().includes(query))
     && ['created', 'implemented'].every(prefix => {
       const date = item[prefix + 'On'];
       const from = filters[prefix + 'From'], to = filters[prefix + 'To'];

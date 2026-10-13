@@ -1,5 +1,11 @@
 # uChurch Development History
 
+## 2026-10-13 — v17.11.115 DIRECTORY-UX
+
+Responsive public directory MVP: merged2+3 styling, colored tags, compact
+filters and full details. Existing28 records preserved; UI patch29 added.
+[Verification](directory-ux-qa.md).
+
 ## 2026-10-13 — v17.11.114 DIRECTORY
 
 Public debt-first directory: permanent IDs, binary types, project tags, nullable

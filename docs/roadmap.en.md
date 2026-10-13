@@ -1,5 +1,10 @@
 # uChurch Public Roadmap
 
+## Directory MVP v17.11.115
+
+Responsive dark directory MVP; historical patch import and full archival
+reconciliation remain separate debts. [Receipt](release-v17.11.115-receipt.md).
+
 ## v17.11.114 directory
 
 Open debts were seeded first. [Directory](../catalog.html),
