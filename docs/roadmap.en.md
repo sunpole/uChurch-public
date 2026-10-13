@@ -1,5 +1,10 @@
 # uChurch Public Roadmap
 
+## v17.11.114 directory
+
+Open debts were seeded first. [Directory](../catalog.html),
+[ID/date rules](work-directory.md). Historical import remains separate.
+
 ## Now
 
 1. Separate the private developer core and the public storefront.

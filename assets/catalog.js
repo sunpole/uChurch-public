@@ -1,5 +1,11 @@
 window.UCHURCH_CATALOG = [
   {
+    "stage": "product",
+    "version": "v17.11.114",
+    "ru": "DIRECTORY: публичный справочник сначала заполнен открытыми долгами; постоянные номера, два типа, части проекта и совместные фильтры по датам. Исторические патчи сохраняются отдельно до сверенного переноса. CRM и формат базы не меняются.",
+    "en": "DIRECTORY: a public debt-first directory with permanent IDs, two types, project parts and combined date filters. Historical patches remain separate pending verified import. CRM behavior and database format are unchanged."
+  },
+  {
     "stage": "foundation",
     "version": "v0.1-v11.0",
     "ru": "Ранняя основа: импорт табличных данных, поиск, фильтры, двуязычные справочники и первая карточка человека.",

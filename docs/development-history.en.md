@@ -1,5 +1,11 @@
 # uChurch Development History
 
+## 2026-10-13 — v17.11.114 DIRECTORY
+
+Public debt-first directory: permanent IDs, binary types, project tags, nullable
+verified dates and combined filters. Historical patch import remains separate.
+[Release](release-v17.11.114.md), [rules](work-directory.md).
+
 This document describes product progress without source code, working
 databases, or personal data. The technical core is kept in a separate private
 developer repository.

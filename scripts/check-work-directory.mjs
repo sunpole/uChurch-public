@@ -1,0 +1,33 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import { validateCatalog, readFilters, selectItems, writeFilters, rangeError, isDate, safeSource } from '../assets/work-directory-model.mjs';
+const data = validateCatalog(JSON.parse(fs.readFileSync(new URL('../assets/work-items.json', import.meta.url))));
+const stableIds = JSON.parse(fs.readFileSync(new URL('./fixtures/work-directory-ids.json', import.meta.url)));
+for (const [code, number] of Object.entries(stableIds)) assert.equal(data.items.find(item=>item.code===code)?.number, number, 'permanent ID: '+code);
+const blank = () => readFilters(new URLSearchParams(), data.parts);
+const sample = (number, kind, createdOn, implementedOn, parts) => ({ ...data.items[0], number, kind, createdOn, implementedOn, parts });
+const items = [sample(1, 'debt', '2026-10-01', null, ['admin']), sample(2, 'patch', '2026-10-02', '2026-10-03', ['admin','table']), sample(3, 'patch', null, null, ['table'])];
+const numbers = filters => selectItems(items, { ...blank(), ...filters }).map(item => item.number);
+assert.deepEqual(numbers({}), [3,2,1]);
+assert.deepEqual(numbers({ kind: 'debt' }), [1]);
+assert.deepEqual(numbers({ parts: ['admin','table'], kind: 'patch', createdFrom: '2026-10-02', createdTo: '2026-10-02', implementedFrom: '2026-10-03', implementedTo: '2026-10-03', number: '2' }), [2]);
+assert.deepEqual(numbers({ createdFrom: '2026-10-01', createdTo: '2026-10-01' }), [1]);
+assert.deepEqual(numbers({ implementedFrom: '2026-10-04' }), []);
+assert.deepEqual(numbers({ sort: 'created-asc' }), [1,2,3]);
+assert.deepEqual(numbers({ sort: 'created-desc' }), [2,1,3]);
+assert.deepEqual(numbers({ sort: 'implemented-asc' }), [2,3,1]);
+assert.deepEqual(numbers({ sort: 'implemented-desc' }), [2,3,1]);
+assert.deepEqual(numbers({ sort: 'number-asc' }), [1,2,3]);
+assert.equal(rangeError({ createdFrom: '2026-10-03', createdTo: '2026-10-01' }), true);
+assert.deepEqual(numbers({ createdFrom: '2026-10-03', createdTo: '2026-10-01' }), []);
+assert.equal(isDate('2026-02-30'), false);
+assert.equal(safeSource('javascript:alert(1)'), false);
+assert.equal(safeSource('docs/../secret.md'), false);
+const filters = { ...blank(), parts:['admin','table'], number:'2', query:'Admin', page:2, pageSize:50 };
+assert.deepEqual(readFilters(writeFilters(filters, 'en'), data.parts), filters);
+assert.deepEqual(readFilters(new URLSearchParams('number=-1&sort=evil&part=evil&createdFrom=2026-02-30&page=Infinity'), data.parts), blank());
+for (const change of [{ kind:'partial' }, { number:data.items[1].number }, { kind:'debt', implementedOn:'2026-10-13' }, { source:'https://evil.test/' }]) {
+  const copy = structuredClone(data); Object.assign(copy.items[0], change); assert.throws(() => validateCatalog(copy));
+}
+for (const item of data.items) assert.ok(fs.existsSync(new URL('../' + item.source, import.meta.url)), 'source exists');
+console.log(`Directory model passed: ${data.items.length} records, schema, binary kinds, dates, AND filters, stable sorting, URL and sources.`);

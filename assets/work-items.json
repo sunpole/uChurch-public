@@ -1,0 +1,665 @@
+{
+  "schemaVersion": 1,
+  "reviewedOn": "2026-10-13",
+  "parts": {
+    "core": {
+      "ru": "Ядро",
+      "en": "Core"
+    },
+    "admin": {
+      "ru": "Админка",
+      "en": "Admin"
+    },
+    "table": {
+      "ru": "Таблица",
+      "en": "Table"
+    },
+    "card": {
+      "ru": "Карточка",
+      "en": "Card"
+    },
+    "widgets": {
+      "ru": "Виджеты",
+      "en": "Widgets"
+    },
+    "registry": {
+      "ru": "Реестр",
+      "en": "Registry"
+    },
+    "database": {
+      "ru": "База / backup",
+      "en": "Database / backup"
+    },
+    "security": {
+      "ru": "Безопасность",
+      "en": "Security"
+    },
+    "sessions": {
+      "ru": "Сессии",
+      "en": "Sessions"
+    },
+    "entry": {
+      "ru": "Вход / навигация",
+      "en": "Entry / navigation"
+    },
+    "infrastructure": {
+      "ru": "Инфраструктура",
+      "en": "Infrastructure"
+    },
+    "docs": {
+      "ru": "Документация",
+      "en": "Documentation"
+    },
+    "qa": {
+      "ru": "Проверки",
+      "en": "QA"
+    },
+    "catalog": {
+      "ru": "Витрина",
+      "en": "Showcase"
+    }
+  },
+  "items": [
+    {
+      "number": 1,
+      "code": "SEC1",
+      "kind": "debt",
+      "parts": [
+        "security",
+        "core"
+      ],
+      "createdOn": null,
+      "implementedOn": null,
+      "version": null,
+      "ru": {
+        "title": "Уязвимости зависимостей",
+        "description": "Разобрать advisory серверных и клиентских зависимостей, обновить точечно и повторить проверки. Сборка сама по себе не подтверждает безопасность."
+      },
+      "en": {
+        "title": "Dependency vulnerabilities",
+        "description": "Review server/client dependency advisories, make narrow updates and rerun checks. A successful build does not establish security."
+      },
+      "source": "docs/development-debt.ru.md"
+    },
+    {
+      "number": 2,
+      "code": "SESSION-ACCEPT",
+      "kind": "debt",
+      "parts": [
+        "sessions",
+        "database",
+        "qa"
+      ],
+      "createdOn": null,
+      "implementedOn": null,
+      "version": null,
+      "ru": {
+        "title": "Пользовательская проверка сохранения при простое",
+        "description": "Проверить длительную работу, 25/30 минут простоя, скачивание в recovery-окне и повторное открытие. Автоматические проверки не заменяют приёмку оператором."
+      },
+      "en": {
+        "title": "Operator acceptance of idle recovery",
+        "description": "Check sustained work, idle warning/lock and snapshot download/reopen during recovery. Automated checks do not replace operator acceptance."
+      },
+      "source": "docs/development-debt.ru.md"
+    },
+    {
+      "number": 3,
+      "code": "TABLE-ACCEPT",
+      "kind": "debt",
+      "parts": [
+        "table",
+        "admin",
+        "qa"
+      ],
+      "createdOn": null,
+      "implementedOn": null,
+      "version": null,
+      "ru": {
+        "title": "Пользовательская приёмка столбцов",
+        "description": "После v17.11.113 проверить видимость, порядок Админки, ширину и сортировку после reload и переноса файла. Синтетический сценарий пройден; пользовательская приёмка открыта."
+      },
+      "en": {
+        "title": "Operator acceptance of table settings",
+        "description": "After v17.11.113 verify visibility, Admin ordering, width and sorting through reload and file transfer. Synthetic QA passed; operator acceptance remains open."
+      },
+      "source": "docs/development-debt.ru.md"
+    },
+    {
+      "number": 4,
+      "code": "QA-CI",
+      "kind": "debt",
+      "parts": [
+        "qa",
+        "table",
+        "card",
+        "admin"
+      ],
+      "createdOn": null,
+      "implementedOn": null,
+      "version": null,
+      "ru": {
+        "title": "Обязательные проверки в CI",
+        "description": "Сделать профильные регрессии столбцов и этапов обязательными перед выпуском; наличие локального сценария не означает обязательный CI."
+      },
+      "en": {
+        "title": "Required CI regression gates",
+        "description": "Make column and growth-stage regressions required release checks. Having local scripts does not establish mandatory CI."
+      },
+      "source": "docs/development-debt.ru.md"
+    },
+    {
+      "number": 5,
+      "code": "GROWTH-ATOMIC",
+      "kind": "debt",
+      "parts": [
+        "database",
+        "admin",
+        "card"
+      ],
+      "createdOn": null,
+      "implementedOn": null,
+      "version": null,
+      "ru": {
+        "title": "Атомарность сохранения связанных настроек",
+        "description": "Доказать откат при частичном отказе нескольких связанных файлов. Разделение этапов и порядок приняты пользователем; атомарность остаётся отдельным долгом."
+      },
+      "en": {
+        "title": "Atomic related-settings save",
+        "description": "Prove rollback after a partial failure across related files. Stage separation and ordering were accepted; atomicity is a separate debt."
+      },
+      "source": "docs/development-debt.ru.md"
+    },
+    {
+      "number": 6,
+      "code": "CORE-QA-BROWSER",
+      "kind": "debt",
+      "parts": [
+        "qa",
+        "table",
+        "entry"
+      ],
+      "createdOn": null,
+      "implementedOn": null,
+      "version": null,
+      "ru": {
+        "title": "Разобрать остановки общего браузерного сценария",
+        "description": "Разделить дефект продукта и ожидания теста: виртуализованная Таблица и экран оператора New. Не выдавать прошедшие API-проверки за полный зелёный browser QA."
+      },
+      "en": {
+        "title": "Diagnose general browser QA stalls",
+        "description": "Distinguish product defects from test waits for virtualized Table and New operator. API success is not full browser QA success."
+      },
+      "source": "docs/development-debt.ru.md"
+    },
+    {
+      "number": 7,
+      "code": "DIRECTORY",
+      "kind": "patch",
+      "parts": [
+        "catalog",
+        "docs"
+      ],
+      "createdOn": "2026-10-13",
+      "implementedOn": "2026-10-13",
+      "version": "v17.11.114",
+      "ru": {
+        "title": "Справочник долгов и патчей",
+        "description": "Реализован публичный справочник: два типа, постоянные номера, теги частей и совместные фильтры. Первично заполнены долги. Исторические патчи остаются отдельным переносом; проверки модели и восьми размеров экрана пройдены."
+      },
+      "en": {
+        "title": "Debt and patch directory",
+        "description": "Public directory implemented: two types, permanent IDs, project tags and combined filters. Debts seeded first. Historical import remains separate; model and eight-viewport checks passed."
+      },
+      "source": "docs/work-directory.md"
+    },
+    {
+      "number": 8,
+      "code": "TABLE-ERROR",
+      "kind": "debt",
+      "parts": [
+        "table",
+        "admin"
+      ],
+      "createdOn": null,
+      "implementedOn": null,
+      "version": null,
+      "ru": {
+        "title": "Ошибка сохранения рядом с действием",
+        "description": "Показывать понятную ошибку у настройки столбцов и сохранить возможность повторить действие без потери выбранных значений."
+      },
+      "en": {
+        "title": "Inline save-failure feedback",
+        "description": "Show a clear error beside the column setting and allow retry without losing selections."
+      },
+      "source": "docs/development-debt.ru.md"
+    },
+    {
+      "number": 9,
+      "code": "SR1-MEASURE",
+      "kind": "debt",
+      "parts": [
+        "infrastructure",
+        "security",
+        "qa"
+      ],
+      "createdOn": null,
+      "implementedOn": null,
+      "version": null,
+      "ru": {
+        "title": "Измерить нагрузку и пределы сервера",
+        "description": "Измерить CPU, память, длительности запросов и пределы Nginx. Локальный короткий всплеск не заменяет нагрузочную проверку VPS."
+      },
+      "en": {
+        "title": "Measure server capacity and limits",
+        "description": "Measure CPU, memory, request durations and Nginx limits. A short local burst does not replace VPS load testing."
+      },
+      "source": "docs/development-debt.ru.md"
+    },
+    {
+      "number": 10,
+      "code": "SR1-ALERTS",
+      "kind": "debt",
+      "parts": [
+        "infrastructure",
+        "security"
+      ],
+      "createdOn": null,
+      "implementedOn": null,
+      "version": null,
+      "ru": {
+        "title": "Мониторинг и уведомления об отказах",
+        "description": "Настроить проверяемые health, ресурсы, истечение сертификатов, алерты и реакцию на отказ; провести учебный инцидент."
+      },
+      "en": {
+        "title": "Monitoring and failure alerts",
+        "description": "Verify health/resource/certificate monitoring, alerts and incident response with a rehearsal."
+      },
+      "source": "docs/development-debt.ru.md"
+    },
+    {
+      "number": 11,
+      "code": "DR1",
+      "kind": "debt",
+      "parts": [
+        "infrastructure",
+        "database",
+        "qa"
+      ],
+      "createdOn": null,
+      "implementedOn": null,
+      "version": null,
+      "ru": {
+        "title": "Восстановление на чистом сервере",
+        "description": "Восстановить точный релиз с защищённой конфигурацией и независимыми копиями. Образ и исходный тег полезны, но не доказывают полное восстановление."
+      },
+      "en": {
+        "title": "Clean-server recovery rehearsal",
+        "description": "Restore an exact release with protected configuration and independent copies in a clean environment. Images and tags alone do not prove full recovery."
+      },
+      "source": "docs/development-debt.ru.md"
+    },
+    {
+      "number": 12,
+      "code": "UX3",
+      "kind": "debt",
+      "parts": [
+        "entry",
+        "sessions"
+      ],
+      "createdOn": null,
+      "implementedOn": null,
+      "version": null,
+      "ru": {
+        "title": "Безопасная навигация и выход",
+        "description": "Единые Назад, Главная и Завершить на всех уровнях, предупреждение о невыгруженной работе, понятное поведение при обрыве."
+      },
+      "en": {
+        "title": "Safe navigation and exit",
+        "description": "Consistent Back, Home and End across all levels, protection for unexported work and understandable disconnect behavior."
+      },
+      "source": "docs/development-debt.ru.md"
+    },
+    {
+      "number": 13,
+      "code": "UX2",
+      "kind": "debt",
+      "parts": [
+        "table",
+        "card",
+        "admin",
+        "widgets"
+      ],
+      "createdOn": null,
+      "implementedOn": null,
+      "version": null,
+      "ru": {
+        "title": "Единый стиль CRM и большие экраны",
+        "description": "Проверить и исправить смешанные стили, наложения и масштабирование на старых ноутбуках, 720p, 1080p, 1440p, 4K и телефонах."
+      },
+      "en": {
+        "title": "Consistent CRM styling and desktop layout",
+        "description": "Resolve mixed styling, overlaps and scaling on old laptops, 720p, 1080p, 1440p, 4K and phones."
+      },
+      "source": "docs/development-debt.ru.md"
+    },
+    {
+      "number": 14,
+      "code": "PORT1",
+      "kind": "debt",
+      "parts": [
+        "infrastructure",
+        "entry"
+      ],
+      "createdOn": null,
+      "implementedOn": null,
+      "version": null,
+      "ru": {
+        "title": "Готовность к следующему домену",
+        "description": "Переезд на .pro выполнен. Нужна отдельная репетиция следующей смены домена с ссылками, Origin, сертификатами и восстановлением."
+      },
+      "en": {
+        "title": "Readiness for another domain move",
+        "description": "The .pro move is complete. Rehearse another domain change including links, Origin, certificates and recovery."
+      },
+      "source": "docs/development-debt.ru.md"
+    },
+    {
+      "number": 15,
+      "code": "COLLAB1",
+      "kind": "debt",
+      "parts": [
+        "database",
+        "security",
+        "core"
+      ],
+      "createdOn": null,
+      "implementedOn": null,
+      "version": null,
+      "ru": {
+        "title": "Общая база нескольких операторов",
+        "description": "Выбрать модель хранения, доступа, прав, конфликтов и единой версии. Пароль или ссылка сами по себе не синхронизируют файлы."
+      },
+      "en": {
+        "title": "Shared database for multiple operators",
+        "description": "Choose authoritative storage, access, roles, conflict handling and one data version. A password or link alone does not synchronize files."
+      },
+      "source": "docs/development-debt.ru.md"
+    },
+    {
+      "number": 16,
+      "code": "BACKUP-DELIVERY",
+      "kind": "debt",
+      "parts": [
+        "database",
+        "security"
+      ],
+      "createdOn": null,
+      "implementedOn": null,
+      "version": null,
+      "ru": {
+        "title": "Безопасная внешняя доставка backup",
+        "description": "Отдельно выбрать почту, Telegram или временную ссылку: получатель, срок, отзыв, доступ и хранение. Это предложение, не реализованная функция."
+      },
+      "en": {
+        "title": "Secure external backup delivery",
+        "description": "Choose email, Telegram or a temporary link separately: recipient, expiry, revocation, authorization and retention. Not implemented."
+      },
+      "source": "docs/development-debt.ru.md"
+    },
+    {
+      "number": 17,
+      "code": "OFFLINE",
+      "kind": "debt",
+      "parts": [
+        "core",
+        "database"
+      ],
+      "createdOn": null,
+      "implementedOn": null,
+      "version": null,
+      "ru": {
+        "title": "Отложенная офлайн-версия",
+        "description": "Возврат к локальной CRM без сервера отложен без срока; сохранить возможность восстановить код и описание архитектуры."
+      },
+      "en": {
+        "title": "Deferred offline edition",
+        "description": "Returning to server-free local CRM is deferred without a date; preserve recoverable code and architecture documentation."
+      },
+      "source": "docs/development-debt.ru.md"
+    },
+    {
+      "number": 18,
+      "code": "CLOUD",
+      "kind": "debt",
+      "parts": [
+        "database",
+        "security"
+      ],
+      "createdOn": null,
+      "implementedOn": null,
+      "version": null,
+      "ru": {
+        "title": "Облачная синхронизация",
+        "description": "Google Drive API и автоматическую синхронизацию не включать в ручной backup-путь. Нужны отдельные требования, разрешения и оценка рисков."
+      },
+      "en": {
+        "title": "Cloud synchronization",
+        "description": "Drive API and automatic synchronization are outside manual backup. Separate requirements, consent and risks are needed."
+      },
+      "source": "docs/development-debt.ru.md"
+    },
+    {
+      "number": 19,
+      "code": "SOURCE-BACKUP",
+      "kind": "debt",
+      "parts": [
+        "infrastructure",
+        "docs"
+      ],
+      "createdOn": null,
+      "implementedOn": null,
+      "version": null,
+      "ru": {
+        "title": "Независимая регулярная копия проекта",
+        "description": "Определить и проверить внешний backup исходников и материалов восстановления вне ПК/GitHub, включая предложенный месячный цикл."
+      },
+      "en": {
+        "title": "Regular independent project backup",
+        "description": "Define and verify external backups of source and recovery materials independent of PC/GitHub, including the proposed monthly cycle."
+      },
+      "source": "docs/development-debt.ru.md"
+    },
+    {
+      "number": 20,
+      "code": "SHOWCASE-HISTORY",
+      "kind": "debt",
+      "parts": [
+        "catalog",
+        "docs"
+      ],
+      "createdOn": null,
+      "implementedOn": null,
+      "version": null,
+      "ru": {
+        "title": "Сверенный перенос старых патчей в справочник",
+        "description": "После первичного наполнения долгов перенести сохранённую историю патчей с источниками. Не выдумывать неизвестные даты и не считать план реализованным патчем."
+      },
+      "en": {
+        "title": "Verified historical patch import",
+        "description": "After debt seeding, migrate preserved patch history with sources. Do not invent dates or label an unimplemented plan a patch."
+      },
+      "source": "docs/development-debt.ru.md"
+    },
+    {
+      "number": 21,
+      "code": "RECOVER-RESTART",
+      "kind": "debt",
+      "parts": [
+        "sessions",
+        "database",
+        "security"
+      ],
+      "createdOn": null,
+      "implementedOn": null,
+      "version": null,
+      "ru": {
+        "title": "Сохранность recovery при restart",
+        "description": "Текущее recovery-окно в памяти не переживает перезапуск сервера. Выбрать безопасную модель без бессрочного хранения расшифрованной базы."
+      },
+      "en": {
+        "title": "Recovery across server restart",
+        "description": "The current in-memory recovery window does not survive server restart. Choose a safe model without indefinite plaintext retention."
+      },
+      "source": "docs/development-debt.ru.md"
+    },
+    {
+      "number": 22,
+      "code": "DEBT-AUDIT",
+      "kind": "debt",
+      "parts": [
+        "docs",
+        "qa",
+        "catalog"
+      ],
+      "createdOn": null,
+      "implementedOn": null,
+      "version": null,
+      "ru": {
+        "title": "Сверка полноты долгов",
+        "description": "Сопоставить чат, активные документы и проверенные исходники. Этот первичный список не объявляет полный аудит всех архивов ПК и всех прежних чатов завершённым."
+      },
+      "en": {
+        "title": "Debt completeness audit",
+        "description": "Reconcile chat, active documents and verified code. This initial list does not claim a complete audit of every PC archive and previous chat."
+      },
+      "source": "docs/development-debt.ru.md"
+    },
+    {
+      "number": 23,
+      "code": "UX3-FLASH",
+      "kind": "debt",
+      "parts": [
+        "entry",
+        "qa"
+      ],
+      "createdOn": null,
+      "implementedOn": null,
+      "version": null,
+      "ru": {
+        "title": "Повторная проверка первого кадра Demo",
+        "description": "Отдельно подтвердить на текущем теге отсутствие мигания старой оболочки и поздней смены иконок; прежний патч не отменяет периодическую проверку."
+      },
+      "en": {
+        "title": "Demo first-frame regression",
+        "description": "Verify the current live tag has no old-shell flash or late icon replacement; an earlier patch does not remove regression obligations."
+      },
+      "source": "docs/development-debt.ru.md"
+    },
+    {
+      "number": 24,
+      "code": "PACKAGE-CONTENTS",
+      "kind": "debt",
+      "parts": [
+        "database",
+        "core"
+      ],
+      "createdOn": null,
+      "implementedOn": null,
+      "version": null,
+      "ru": {
+        "title": "Решение о переносе Корзины и Журнала",
+        "description": "Текущий контейнер переносит активные пять частей и метаданные, но не историю Корзины и Журнал. Расширять состав только по отдельному решению."
+      },
+      "en": {
+        "title": "Trash and Journal portability decision",
+        "description": "The container transfers five active parts and metadata, not Trash history or Journal. Extending it needs a separate decision."
+      },
+      "source": "docs/development-debt.ru.md"
+    },
+    {
+      "number": 25,
+      "code": "DEMO-SCENARIOS",
+      "kind": "debt",
+      "parts": [
+        "qa",
+        "database"
+      ],
+      "createdOn": null,
+      "implementedOn": null,
+      "version": null,
+      "ru": {
+        "title": "Контролируемое развитие Demo-сценариев",
+        "description": "DA2-C: переносить только проверенные синтетические сценарии в публичный fixture; без кнопки перезаписи исходной Demo и без реальных данных."
+      },
+      "en": {
+        "title": "Controlled Demo scenario development",
+        "description": "DA2-C: promote only reviewed synthetic cases into the fixture, with no source-overwrite button and no owner data."
+      },
+      "source": "docs/development-debt.ru.md"
+    },
+    {
+      "number": 26,
+      "code": "DOCS-CURRENT",
+      "kind": "debt",
+      "parts": [
+        "docs"
+      ],
+      "createdOn": null,
+      "implementedOn": null,
+      "version": null,
+      "ru": {
+        "title": "Сверка активной документации с текущим MVP",
+        "description": "В старых планах остаются ru-адреса, прежние лимиты и будущее описание уже готовых функций. Отделить исторические записи от действующих инструкций, не переписывая историю."
+      },
+      "en": {
+        "title": "Align active documentation with current MVP",
+        "description": "Older plans retain ru addresses, former limits and future wording for implemented functions. Separate historical records from current guidance without rewriting history."
+      },
+      "source": "docs/development-debt.ru.md"
+    },
+    {
+      "number": 27,
+      "code": "COLLAB-VIEW",
+      "kind": "debt",
+      "parts": [
+        "sessions",
+        "security",
+        "core"
+      ],
+      "createdOn": null,
+      "implementedOn": null,
+      "version": null,
+      "ru": {
+        "title": "Проект доступа только для просмотра",
+        "description": "Отдельно оценить временных приглашённых читателей при одном редакторе: срок, отзыв, изоляция и право экспорта. Пока не реализовано."
+      },
+      "en": {
+        "title": "Read-only collaboration design",
+        "description": "Assess temporary read-only viewers with one writer: expiry, revocation, isolation and export authority. Not implemented."
+      },
+      "source": "docs/development-debt.ru.md"
+    },
+    {
+      "number": 28,
+      "code": "SEC-UPSTREAM",
+      "kind": "debt",
+      "parts": [
+        "security",
+        "infrastructure"
+      ],
+      "createdOn": null,
+      "implementedOn": null,
+      "version": null,
+      "ru": {
+        "title": "Оценка внешней защиты от DDoS",
+        "description": "VPS и локальные лимиты не гарантируют защиту от распределённой атаки. Выбрать необходимость upstream/CDN/WAF по измерениям и требованиям, без обещаний абсолютной защиты."
+      },
+      "en": {
+        "title": "Upstream DDoS protection assessment",
+        "description": "A VPS and local limits cannot guarantee distributed-attack protection. Evaluate upstream/CDN/WAF based on measurements and requirements, with no absolute guarantees."
+      },
+      "source": "docs/development-debt.ru.md"
+    }
+  ]
+}

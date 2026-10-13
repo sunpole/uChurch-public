@@ -1,5 +1,10 @@
 # Complete Public Patch Index
 
+## v17.11.114 — DIRECTORY
+
+Debt-first directory with combined filters; version history remains preserved.
+[Details](release-v17.11.114.md).
+
 This index lists every documented stage known in the local project history
 when the public storefront was created. The earliest confirmed work stream is
 the `v0.1-v11.0` roadmap, followed by `v15.0` documents, a working `v15.1`

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Справочник долгов и патчей uChurch: части проекта, номера, даты и подтверждённые источники.">
+  <meta name="theme-color" content="#234d48">
+  <link rel="canonical" href="https://sunpole.github.io/uChurch-public/catalog.html">
+  <title>uChurch — справочник долгов и патчей</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/work-directory.css">
+</head>
+<body>
+  <header class="directory-header">
+    <a class="brand" href="index.html"><img src="assets/favicon.svg" width="28" height="28" alt="">uChurch</a>
+    <nav aria-label="Navigation"><a href="index.html" data-ru="Витрина" data-en="Showcase">Витрина</a><a href="index.html#history" data-ru="История версий" data-en="Version history">История версий</a><a href="https://uchurch.pro/" data-ru="Главная проекта" data-en="Project home">Главная проекта</a></nav>
+    <div class="languages"><button type="button" data-language="ru">RU</button><button type="button" data-language="en">EN</button></div>
+  </header>
+  <main>
+    <div class="directory-heading"><div><h1 data-ru="Долги и патчи" data-en="Debts and patches">Долги и патчи</h1><p data-summary></p></div><span class="version">v17.11.114</span></div>
+    <form id="filters" role="search">
+      <div class="filter-main">
+        <label><span data-ru="Поиск" data-en="Search">Поиск</span><input name="query" type="search" maxlength="300"></label>
+        <label><span data-ru="Тип" data-en="Type">Тип</span><select name="kind"><option value="" data-ru="Все" data-en="All">Все</option><option value="debt" data-ru="Долг" data-en="Debt">Долг</option><option value="patch" data-ru="Патч" data-en="Patch">Патч</option></select></label>
+        <label><span data-ru="Номер" data-en="Number">Номер</span><input name="number" type="number" min="1" step="1" inputmode="numeric"></label>
+      </div>
+      <fieldset><legend data-ru="Часть проекта" data-en="Project part">Часть проекта</legend><div class="part-options" data-parts></div></fieldset>
+      <div class="filter-dates">
+        <fieldset><legend data-ru="Дата создания" data-en="Creation date">Дата создания</legend><div class="date-range"><label><span data-ru="С" data-en="From">С</span><input type="date" name="createdFrom"></label><label><span data-ru="По" data-en="To">По</span><input type="date" name="createdTo"></label></div></fieldset>
+        <fieldset><legend data-ru="Дата реализации" data-en="Implementation date">Дата реализации</legend><div class="date-range"><label><span data-ru="С" data-en="From">С</span><input type="date" name="implementedFrom"></label><label><span data-ru="По" data-en="To">По</span><input type="date" name="implementedTo"></label></div></fieldset>
+      </div>
+      <div class="filter-footer"><label><span data-ru="Порядок" data-en="Order">Порядок</span><select name="sort"></select></label><button type="reset" data-ru="Сбросить фильтры" data-en="Reset filters">Сбросить фильтры</button></div>
+      <p id="filter-error" class="error" role="alert" hidden></p>
+    </form>
+    <section aria-label="Directory results">
+      <div class="results-toolbar"><p data-count role="status" aria-live="polite">Загрузка…</p><label><span data-ru="На странице" data-en="Per page">На странице</span><select name="pageSize" form="filters"><option>25</option><option>50</option><option>100</option></select></label></div>
+      <div class="column-headings" aria-hidden="true"><span>№ / ID</span><span data-ru="Задача и источник" data-en="Item and source">Задача и источник</span><span data-ru="Создано" data-en="Created">Создано</span><span data-ru="Реализовано" data-en="Implemented">Реализовано</span></div>
+      <div data-results></div>
+      <div class="pagination"><button type="button" data-prev data-ru="Назад" data-en="Previous">Назад</button><span data-page></span><button type="button" data-next data-ru="Далее" data-en="Next">Далее</button></div>
+    </section>
+    <noscript>Для фильтров нужен JavaScript. <a href="docs/development-debt.ru.md">Открыть текстовый список долгов</a>.</noscript>
+  </main>
+  <footer><a href="docs/work-directory.md" data-ru="Правила справочника и источники" data-en="Directory rules and sources">Правила справочника и источники</a><a href="https://github.com/sunpole/uChurch-public">GitHub</a></footer>
+  <script type="module" src="assets/work-directory.js"></script>
+</body>
+</html>
