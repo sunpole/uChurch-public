@@ -55,4 +55,3 @@ published2026-10-13T16:09:51.959Z: https://t.me/uNewsLog/152.
 Caption737, no truncation, one showcase link and one hashtag set.
 Final receipt commits update main only; source tags remain immutable and do not
 require a runtime restart. Historical patch import and27 other debts stay open.
-
