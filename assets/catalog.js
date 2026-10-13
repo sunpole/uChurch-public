@@ -658,5 +658,11 @@ window.UCHURCH_CATALOG = [
     "version": "v17.11.112",
     "ru": "GROWTH-ORDER: ручной и алфавитный порядок этапов из Админки применяется в Карточке; оба редактора используют один порядок. Проверены отказ сохранения/повтор, reload, экспорт и повторное открытие. Добавлена хроника с реальными снимками synthetic QA; пользовательская приёмка остаётся открытой.",
     "en": "GROWTH-ORDER: manual/alphabetical stage ordering reaches Card; both Admin editors share the same order. Regression covers failed-save retry, reload, export/reopen. Real synthetic-QA screenshots form a dated chronicle; operator acceptance remains open."
+  },
+  {
+    "stage": "product",
+    "version": "v17.11.113",
+    "ru": "TABLE-PROFILE: ширина и сортировка скрытого столбца сохраняются при возврате и перезагрузке. Личный профиль браузера не содержит данных людей и не перекрывает порядок Админки; порядок переносится в защищённом файле базы. Точный статус Pilot и проверок зафиксирован отдельно в квитанции выпуска.",
+    "en": "TABLE-PROFILE: hidden-column width and sorting survive return and reload. The local browser profile contains no people data and cannot override Admin order; ordering travels in the encrypted database. Exact Pilot installation and verification status is recorded in the release receipt."
   }
 ];

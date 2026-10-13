@@ -15,6 +15,10 @@
 
 ## Next Open-MVP Debts
 
+TABLE-PROFILE v17.11.113 retains personal column width/sort across hiding
+and reload without overriding Admin ordering or changing the database format.
+[Exact verification and deployment status](release-v17.11.113-receipt.md).
+
 GROWTH-ORDER v17.11.112 fixes the separately discovered stage-order mismatch.
 Editors and Card agree after reload and package reopen.
 [Release status](release-v17.11.112-receipt.md),
