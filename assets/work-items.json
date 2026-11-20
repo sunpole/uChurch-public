@@ -63,23 +63,23 @@
     {
       "number": 1,
       "code": "SEC1",
-      "kind": "debt",
+      "kind": "patch",
       "parts": [
         "security",
         "core"
       ],
       "createdOn": null,
-      "implementedOn": null,
-      "version": null,
+      "implementedOn": "2026-11-20",
+      "version": "v17.11.119",
       "ru": {
         "title": "Уязвимости зависимостей",
-        "description": "Разобрать advisory серверных и клиентских зависимостей, обновить точечно и повторить проверки. Сборка сама по себе не подтверждает безопасность."
+        "description": "Серия 116–119 закрыла замечания к npm-зависимостям. На 20 ноября полные аудиты клиента и сервера, а также аудит рабочих зависимостей сервера вернули 0."
       },
       "en": {
         "title": "Dependency vulnerabilities",
-        "description": "Review server/client dependency advisories, make narrow updates and rerun checks. A successful build does not establish security."
+        "description": "Releases 116–119 resolved the tracked npm dependency findings. The full client and server audits and server production audit all reported zero findings on 20 November."
       },
-      "source": "docs/development-debt.ru.md"
+      "source": "docs/release-v17.11.119.md"
     },
     {
       "number": 2,
@@ -745,6 +745,27 @@
         "description": "Updated the interface build tool to Vite 8.3.8. Browser checks covered saving a card and displaying the change in the table. The client npm audit reported zero findings on 20 November."
       },
       "source": "docs/release-v17.11.118.md"
+    },
+    {
+      "number": 33,
+      "code": "SEC1-WATCH",
+      "kind": "patch",
+      "parts": [
+        "security",
+        "core"
+      ],
+      "createdOn": "2026-11-20",
+      "implementedOn": "2026-11-20",
+      "version": "v17.11.119",
+      "ru": {
+        "title": "Перезапуск сервера при разработке",
+        "description": "В режиме разработки сервер теперь перезапускается средствами Node.js после правки кода. Сохранение записи проверили на синтетической базе: данные прочитались обратно, процесс продолжил работу."
+      },
+      "en": {
+        "title": "Development server restart",
+        "description": "The development server now uses Node.js to restart after code changes. A synthetic record was saved and read back while the same process kept serving requests."
+      },
+      "source": "docs/release-v17.11.119.md"
     }
   ]
 }
