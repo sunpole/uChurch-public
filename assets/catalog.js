@@ -1,4 +1,5 @@
 window.UCHURCH_CATALOG = [
+  {"stage": "product", "version": "v17.11.116", "ru": "Обновлены две зависимости сервера и сборки интерфейса. На обоих стендах проверены открытие временной Demo-сессии и чтение её синтетических данных. Остальные обновления зависимостей остаются в очереди.", "en": "Two dependencies used by the server and the interface build have been updated. A fresh temporary Demo session was opened and its synthetic data read on both deployments. Further dependency updates remain in the backlog."},
   {
     "stage": "product",
     "version": "v17.11.115",

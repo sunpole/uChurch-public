@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewedOn": "2026-10-13",
+  "reviewedOn": "2026-11-20",
   "parts": {
     "core": {
       "ru": "Ядро",
@@ -682,6 +682,27 @@
         "description": "Merged directions 2+3: dark palette, colored tags, compact filters, item details, keyboard navigation and old/new screen layouts. Existing items and IDs preserved; CRM and database format unchanged."
       },
       "source": "docs/release-v17.11.115.md"
+    },
+    {
+      "number": 30,
+      "code": "SEC1-DEPS",
+      "kind": "patch",
+      "parts": [
+        "security",
+        "core"
+      ],
+      "createdOn": "2026-11-20",
+      "implementedOn": "2026-11-20",
+      "version": "v17.11.116",
+      "ru": {
+        "title": "Обновление зависимостей сервера и сборки",
+        "description": "Обновлены две зависимости сервера и сборки интерфейса. На обоих стендах проверены открытие временной Demo-сессии и чтение её синтетических данных. Остальные обновления зависимостей остаются в очереди."
+      },
+      "en": {
+        "title": "Server and build dependency update",
+        "description": "Two dependencies used by the server and the interface build have been updated. A fresh temporary Demo session was opened and its synthetic data read on both deployments. Further dependency updates remain in the backlog."
+      },
+      "source": "docs/release-v17.11.116.md"
     }
   ]
 }
