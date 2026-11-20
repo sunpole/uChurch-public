@@ -724,6 +724,27 @@
         "description": "Updated server request processing. Both Staging and Pilot passed a compressed JSON save and reload check with a synthetic record."
       },
       "source": "docs/release-v17.11.117.md"
+    },
+    {
+      "number": 32,
+      "code": "SEC1-VITE",
+      "kind": "patch",
+      "parts": [
+        "security",
+        "core"
+      ],
+      "createdOn": "2026-11-20",
+      "implementedOn": "2026-11-20",
+      "version": "v17.11.118",
+      "ru": {
+        "title": "Обновление сборки интерфейса",
+        "description": "Обновили инструмент сборки интерфейса до Vite 8.3.8. В браузере проверили сохранение из карточки и отображение изменения в таблице. Аудит клиентских npm-зависимостей 20 ноября вернул 0 замечаний."
+      },
+      "en": {
+        "title": "Interface build update",
+        "description": "Updated the interface build tool to Vite 8.3.8. Browser checks covered saving a card and displaying the change in the table. The client npm audit reported zero findings on 20 November."
+      },
+      "source": "docs/release-v17.11.118.md"
     }
   ]
 }

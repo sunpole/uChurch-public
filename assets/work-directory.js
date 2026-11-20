@@ -1,4 +1,4 @@
-import { validateCatalog, readFilters, writeFilters, selectItems, rangeError, dateKeys, sorts } from './work-directory-model.mjs?v=v17.11.117';
+import { validateCatalog, readFilters, writeFilters, selectItems, rangeError, dateKeys, sorts } from './work-directory-model.mjs?v=v17.11.118';
 
 const form = document.querySelector('#filters');
 const results = document.querySelector('[data-results]');
@@ -167,7 +167,7 @@ function updateFilters() {
   filters=readFilters(search,data.parts); render();
 }
 try {
-  const response=await fetch('assets/work-items.json?v=v17.11.117',{cache:'no-store'});
+  const response=await fetch('assets/work-items.json?v=v17.11.118',{cache:'no-store'});
   if(!response.ok) throw Error('Directory unavailable');
   data=validateCatalog(await response.json());
   filters=readFilters(params,data.parts);
