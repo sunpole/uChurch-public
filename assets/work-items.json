@@ -703,6 +703,27 @@
         "description": "Two dependencies used by the server and the interface build have been updated. A fresh temporary Demo session was opened and its synthetic data read on both deployments. Further dependency updates remain in the backlog."
       },
       "source": "docs/release-v17.11.116.md"
+    },
+    {
+      "number": 31,
+      "code": "SEC1-JSON",
+      "kind": "patch",
+      "parts": [
+        "security",
+        "core"
+      ],
+      "createdOn": "2026-11-20",
+      "implementedOn": "2026-11-20",
+      "version": "v17.11.117",
+      "ru": {
+        "title": "Сохранение обычных и сжатых запросов",
+        "description": "Обновили обработку запросов на сервере. На Staging и Pilot проверили сохранение и повторное чтение тестовой записи при передаче сжатого JSON."
+      },
+      "en": {
+        "title": "Saving regular and compressed JSON requests",
+        "description": "Updated server request processing. Both Staging and Pilot passed a compressed JSON save and reload check with a synthetic record."
+      },
+      "source": "docs/release-v17.11.117.md"
     }
   ]
 }

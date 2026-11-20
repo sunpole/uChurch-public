@@ -1,4 +1,5 @@
 window.UCHURCH_CATALOG = [
+  {"stage": "product", "version": "v17.11.117", "ru": "Обновили обработку запросов на сервере. На Staging и Pilot проверили сохранение и повторное чтение тестовой записи при передаче сжатого JSON.", "en": "Updated server request processing. Both Staging and Pilot passed a compressed JSON save and reload check with a synthetic record."},
   {"stage": "product", "version": "v17.11.116", "ru": "Обновлены две зависимости сервера и сборки интерфейса. На обоих стендах проверены открытие временной Demo-сессии и чтение её синтетических данных. Остальные обновления зависимостей остаются в очереди.", "en": "Two dependencies used by the server and the interface build have been updated. A fresh temporary Demo session was opened and its synthetic data read on both deployments. Further dependency updates remain in the backlog."},
   {
     "stage": "product",
